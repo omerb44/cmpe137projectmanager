@@ -12,6 +12,17 @@
 		3B21CA201DCAC70E000976DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA1E1DCAC70E000976DF /* Main.storyboard */; };
 		3B21CA221DCAC70E000976DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA211DCAC70E000976DF /* Assets.xcassets */; };
 		3B21CA251DCAC70E000976DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA231DCAC70E000976DF /* LaunchScreen.storyboard */; };
+		3B21CA301DCACC67000976DF /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA2F1DCACC67000976DF /* Employee.swift */; };
+		3B21CA321DCACC89000976DF /* TopLevelEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA311DCACC89000976DF /* TopLevelEmployee.swift */; };
+		3B21CA341DCACCCB000976DF /* MiddleLevelEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA331DCACCCB000976DF /* MiddleLevelEmployee.swift */; };
+		3B21CA361DCACCE4000976DF /* LowLevelEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA351DCACCE4000976DF /* LowLevelEmployee.swift */; };
+		3B21CA3A1DCACD52000976DF /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA391DCACD52000976DF /* Calendar.swift */; };
+		3B21CA3C1DCACD67000976DF /* TopLevelCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA3B1DCACD67000976DF /* TopLevelCalendar.swift */; };
+		3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA3D1DCACD87000976DF /* MiddleLevelCalendar.swift */; };
+		3B21CA401DCACD99000976DF /* LowLevelCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA3F1DCACD99000976DF /* LowLevelCalendar.swift */; };
+		3B21CA421DCACDD0000976DF /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA411DCACDD0000976DF /* Project.swift */; };
+		3B21CA441DCACDE9000976DF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA431DCACDE9000976DF /* Task.swift */; };
+		3B21CA461DCACE05000976DF /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA451DCACE05000976DF /* Company.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		3B21CA211DCAC70E000976DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B21CA241DCAC70E000976DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B21CA261DCAC70E000976DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B21CA2F1DCACC67000976DF /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		3B21CA311DCACC89000976DF /* TopLevelEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelEmployee.swift; sourceTree = "<group>"; };
+		3B21CA331DCACCCB000976DF /* MiddleLevelEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleLevelEmployee.swift; sourceTree = "<group>"; };
+		3B21CA351DCACCE4000976DF /* LowLevelEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowLevelEmployee.swift; sourceTree = "<group>"; };
+		3B21CA391DCACD52000976DF /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		3B21CA3B1DCACD67000976DF /* TopLevelCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelCalendar.swift; sourceTree = "<group>"; };
+		3B21CA3D1DCACD87000976DF /* MiddleLevelCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleLevelCalendar.swift; sourceTree = "<group>"; };
+		3B21CA3F1DCACD99000976DF /* LowLevelCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowLevelCalendar.swift; sourceTree = "<group>"; };
+		3B21CA411DCACDD0000976DF /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		3B21CA431DCACDE9000976DF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3B21CA451DCACE05000976DF /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +77,64 @@
 			isa = PBXGroup;
 			children = (
 				3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */,
-				3B21CA1C1DCAC70E000976DF /* ViewController.swift */,
-				3B21CA1E1DCAC70E000976DF /* Main.storyboard */,
-				3B21CA211DCAC70E000976DF /* Assets.xcassets */,
-				3B21CA231DCAC70E000976DF /* LaunchScreen.storyboard */,
 				3B21CA261DCAC70E000976DF /* Info.plist */,
+				3B21CA211DCAC70E000976DF /* Assets.xcassets */,
+				3B21CA2D1DCACB29000976DF /* ViewController */,
+				3B21CA2C1DCACB1E000976DF /* Classes */,
+				3B21CA2E1DCACC2E000976DF /* StoryBoard */,
 			);
 			path = ProjectManager;
+			sourceTree = "<group>";
+		};
+		3B21CA2C1DCACB1E000976DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B21CA451DCACE05000976DF /* Company.swift */,
+				3B21CA411DCACDD0000976DF /* Project.swift */,
+				3B21CA431DCACDE9000976DF /* Task.swift */,
+				3B21CA381DCACD43000976DF /* Calendar */,
+				3B21CA371DCACD1E000976DF /* Employee */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3B21CA2D1DCACB29000976DF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B21CA1C1DCAC70E000976DF /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3B21CA2E1DCACC2E000976DF /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3B21CA1E1DCAC70E000976DF /* Main.storyboard */,
+				3B21CA231DCAC70E000976DF /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3B21CA371DCACD1E000976DF /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				3B21CA2F1DCACC67000976DF /* Employee.swift */,
+				3B21CA311DCACC89000976DF /* TopLevelEmployee.swift */,
+				3B21CA331DCACCCB000976DF /* MiddleLevelEmployee.swift */,
+				3B21CA351DCACCE4000976DF /* LowLevelEmployee.swift */,
+			);
+			name = Employee;
+			sourceTree = "<group>";
+		};
+		3B21CA381DCACD43000976DF /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				3B21CA391DCACD52000976DF /* Calendar.swift */,
+				3B21CA3B1DCACD67000976DF /* TopLevelCalendar.swift */,
+				3B21CA3D1DCACD87000976DF /* MiddleLevelCalendar.swift */,
+				3B21CA3F1DCACD99000976DF /* LowLevelCalendar.swift */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +210,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */,
+				3B21CA321DCACC89000976DF /* TopLevelEmployee.swift in Sources */,
+				3B21CA341DCACCCB000976DF /* MiddleLevelEmployee.swift in Sources */,
 				3B21CA1D1DCAC70E000976DF /* ViewController.swift in Sources */,
+				3B21CA441DCACDE9000976DF /* Task.swift in Sources */,
+				3B21CA361DCACCE4000976DF /* LowLevelEmployee.swift in Sources */,
+				3B21CA301DCACC67000976DF /* Employee.swift in Sources */,
 				3B21CA1B1DCAC70E000976DF /* AppDelegate.swift in Sources */,
+				3B21CA421DCACDD0000976DF /* Project.swift in Sources */,
+				3B21CA3C1DCACD67000976DF /* TopLevelCalendar.swift in Sources */,
+				3B21CA3A1DCACD52000976DF /* Calendar.swift in Sources */,
+				3B21CA461DCACE05000976DF /* Company.swift in Sources */,
+				3B21CA401DCACD99000976DF /* LowLevelCalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
