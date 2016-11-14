@@ -28,5 +28,6 @@ class Company {
     
     func createAccessCodes() -> [String] {
         
+        return [String]()
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3B21CA1B1DCAC70E000976DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */; };
-		3B21CA1D1DCAC70E000976DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA1C1DCAC70E000976DF /* ViewController.swift */; };
 		3B21CA201DCAC70E000976DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA1E1DCAC70E000976DF /* Main.storyboard */; };
 		3B21CA221DCAC70E000976DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA211DCAC70E000976DF /* Assets.xcassets */; };
 		3B21CA251DCAC70E000976DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA231DCAC70E000976DF /* LaunchScreen.storyboard */; };
@@ -24,12 +23,12 @@
 		3B21CA441DCACDE9000976DF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA431DCACDE9000976DF /* Task.swift */; };
 		3B21CA461DCACE05000976DF /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA451DCACE05000976DF /* Company.swift */; };
 		3B63B1C91DD9440400842E72 /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B1C81DD9440400842E72 /* CalendarDate.swift */; };
+		3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B1CA1DD947EC00842E72 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B21CA171DCAC70E000976DF /* ProjectManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B21CA1C1DCAC70E000976DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B21CA1F1DCAC70E000976DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B21CA211DCAC70E000976DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B21CA241DCAC70E000976DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		3B21CA431DCACDE9000976DF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3B21CA451DCACE05000976DF /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		3B63B1C81DD9440400842E72 /* CalendarDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
+		3B63B1CA1DD947EC00842E72 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		3B21CA2D1DCACB29000976DF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3B21CA1C1DCAC70E000976DF /* ViewController.swift */,
+				3B63B1CA1DD947EC00842E72 /* TabBarController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -216,7 +216,6 @@
 				3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */,
 				3B21CA321DCACC89000976DF /* TopLevelEmployee.swift in Sources */,
 				3B21CA341DCACCCB000976DF /* MiddleLevelEmployee.swift in Sources */,
-				3B21CA1D1DCAC70E000976DF /* ViewController.swift in Sources */,
 				3B21CA441DCACDE9000976DF /* Task.swift in Sources */,
 				3B21CA361DCACCE4000976DF /* LowLevelEmployee.swift in Sources */,
 				3B21CA301DCACC67000976DF /* Employee.swift in Sources */,
@@ -225,6 +224,7 @@
 				3B21CA421DCACDD0000976DF /* Project.swift in Sources */,
 				3B21CA3C1DCACD67000976DF /* TopLevelCalendar.swift in Sources */,
 				3B21CA3A1DCACD52000976DF /* Calendar.swift in Sources */,
+				3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */,
 				3B21CA461DCACE05000976DF /* Company.swift in Sources */,
 				3B21CA401DCACD99000976DF /* LowLevelCalendar.swift in Sources */,
 			);

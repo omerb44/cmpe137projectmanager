@@ -19,11 +19,13 @@ class TopLevelEmployee: Employee {
         self.lastName   = lastName
         self.email      = email
     }
-    
+   /*
     func registerCompany(companyName: String) -> Company {
+        
         
     }
     
+ */
     func createTask() -> Task {
         
         return Task()
