@@ -10,5 +10,8 @@ import Foundation
 
 protocol Employee {
     
+    var firstName   : String { get }
+    var lastName    : String { get }
+    var email       : String { get }
     
 }
