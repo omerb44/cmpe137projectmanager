@@ -12,7 +12,7 @@
         <!--My Calendar-->
         <scene sceneID="lWO-dL-ql1">
             <objects>
-                <viewController title="My Calendar" id="kKl-si-tpV" sceneMemberID="viewController">
+                <viewController title="My Calendar" id="kKl-si-tpV" customClass="CalendarVC" customModule="ProjectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i7M-IV-g8l"/>
                         <viewControllerLayoutGuide type="bottom" id="eIq-WP-GQg"/>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="T3Y-fM-zg8"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" id="T3Y-fM-zg8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K90-Xj-sn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,7 +31,7 @@
         <!--Messages-->
         <scene sceneID="gok-YY-WII">
             <objects>
-                <viewController title="Messages" id="mN0-LE-4Xm" sceneMemberID="viewController">
+                <viewController title="Messages" id="mN0-LE-4Xm" customClass="MessagesVC" customModule="ProjectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bTK-kx-RuA"/>
                         <viewControllerLayoutGuide type="bottom" id="efM-NW-ySS"/>
@@ -41,16 +41,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="yQ7-YM-VeF"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="Group Message" id="yQ7-YM-VeF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPk-gS-H9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-193" y="717"/>
         </scene>
-        <!--My Projects-->
+        <!--Settings-->
         <scene sceneID="tQT-11-nhi">
             <objects>
-                <viewController title="My Projects" id="kNB-u3-X9o" sceneMemberID="viewController">
+                <viewController title="Settings" id="kNB-u3-X9o" customClass="SettingsVC" customModule="ProjectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="80U-cy-UtF"/>
                         <viewControllerLayoutGuide type="bottom" id="USN-Am-54F"/>
@@ -59,20 +59,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Pf8-LB-TOd"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="Pf8-LB-TOd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4uY-YW-WCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1558" y="717"/>
+            <point key="canvasLocation" x="1159" y="716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cik-2Q-ZUS">
             <objects>
                 <navigationController id="A42-Jl-cbC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lCs-j6-bU7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="lCs-j6-bU7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="r39-Fu-UNa" kind="relationship" relationship="rootViewController" id="BbB-ME-JHa"/>
@@ -80,12 +89,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8q-pO-RsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1134" y="-62"/>
+            <point key="canvasLocation" x="-1188" y="-62"/>
         </scene>
-        <!--Settings-->
+        <!--Recents-->
         <scene sceneID="t9m-M0-sNe">
             <objects>
-                <viewController title="Settings" id="i6V-68-IX4" sceneMemberID="viewController">
+                <viewController title="Recents" id="i6V-68-IX4" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UHP-yL-k64"/>
                         <viewControllerLayoutGuide type="bottom" id="D1h-q0-8gw"/>
@@ -95,16 +104,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="lZn-bH-lnM"/>
+                    <tabBarItem key="tabBarItem" title="Recents" image="Past-100" id="lZn-bH-lnM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Diy-lB-Nww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1172" y="716"/>
+            <point key="canvasLocation" x="478" y="716"/>
         </scene>
-        <!--Last Changes-->
+        <!--Tasks-->
         <scene sceneID="qmh-ku-jeE">
             <objects>
-                <viewController title="Last Changes" id="1mD-XF-6OF" sceneMemberID="viewController">
+                <viewController title="Tasks" id="1mD-XF-6OF" customClass="ProjectsTasksVC" customModule="ProjectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3EK-u1-YNA"/>
                         <viewControllerLayoutGuide type="bottom" id="4RQ-fA-6hM"/>
@@ -114,11 +123,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="ij0-kJ-tNk"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="Today" id="ij0-kJ-tNk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZO9-46-ETd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="718"/>
+            <point key="canvasLocation" x="-1545" y="716"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ot0-rj-jZ4">
@@ -129,6 +138,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="1mD-XF-6OF" kind="relationship" relationship="viewControllers" id="PIE-DA-hl3"/>
@@ -143,4 +153,11 @@
             <point key="canvasLocation" x="-192" y="-61"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar" width="30" height="30"/>
+        <image name="Group Message" width="30" height="30"/>
+        <image name="Past-100" width="30" height="30"/>
+        <image name="Settings" width="30" height="30"/>
+        <image name="Today" width="30" height="30"/>
+    </resources>
 </document>
