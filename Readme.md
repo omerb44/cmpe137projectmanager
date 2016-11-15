@@ -1,31 +1,7 @@
 # CMPE137 Project Manager iOS App
 
 ## 1. Project structure
-```swift
-- ProjectManager
-  - AppDelegate.swift
-  - Info.plist
-  - Assets.xcassets
-  - ViewController
-    - ViewController.swift
-  - Classes
-    - Company.swift
-    - Project.swift
-    - Task.swift
-    - Calendar
-      - Calendar.swift
-      - TopLevelCalendar.swift
-      - MiddleLevelCalendar.swift
-      - LowLevelCalendar.swift
-    - Employee
-      - Employee.swift
-      - TopLevelEmployee.swift
-      - MiddleLevelEmployee.swift
-      - LowLevelEmployee.swift
-  - StoryBoard
-    - Main.storyboard
-    - LaunchScreen.storyboard
-```
+[![ProjectStructure.png](https://s14.postimg.org/u8wik9z5d/Project_Structure.png)](https://postimg.org/image/fppdiv60d/)
 
 ## 2. Class diagram
 
