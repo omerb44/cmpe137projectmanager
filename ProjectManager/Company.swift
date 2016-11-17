@@ -9,7 +9,7 @@
 import Foundation
 
 class Company {
-    private var employees = [Employee]()
+    fileprivate var employees = [Employee]()
     var name        : String
     var accessCodes = [String]()
     
@@ -18,11 +18,11 @@ class Company {
         self.accessCodes = createAccessCodes()
     }
     
-    func addEmployee(employee: Employee) {
+    func addEmployee(_ employee: Employee) {
         employees.append(employee)
     }
     
-    func removeEmployee(employee: Employee) {
+    func removeEmployee(_ employee: Employee) {
         
     }
     
