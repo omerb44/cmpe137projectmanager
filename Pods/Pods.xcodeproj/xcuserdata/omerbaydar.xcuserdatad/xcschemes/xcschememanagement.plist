@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FSCalendar.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ProjectManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>28B1B13EE094A72E744350762BDBF324</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E491B831F874E433F1AD7A4C0FF959C3</key>
+		<key>C63E95AC470B6669BB21455ADD64897A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
