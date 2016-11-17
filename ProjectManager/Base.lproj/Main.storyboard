@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Calendar-->
+        <!--Calendar Scene-->
         <scene sceneID="lWO-dL-ql1">
             <objects>
-                <viewController title="My Calendar" id="kKl-si-tpV" customClass="CalendarVC" customModule="ProjectManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="My Calendar" id="kKl-si-tpV" userLabel="Calendar Scene" customClass="CalendarVC" customModule="ProjectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i7M-IV-g8l"/>
                         <viewControllerLayoutGuide type="bottom" id="eIq-WP-GQg"/>
@@ -20,13 +20,44 @@
                     <view key="view" contentMode="scaleToFill" id="zZS-Ve-tMb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii5-aE-PGi" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="ZnM-QB-bmg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitContentSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kKl-si-tpV" id="eg9-b4-tvv"/>
+                                    <outlet property="delegate" destination="kKl-si-tpV" id="ObS-Ig-G4O"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ii5-aE-PGi" secondAttribute="trailing" id="RH5-m6-ed3"/>
+                            <constraint firstItem="Ii5-aE-PGi" firstAttribute="leading" secondItem="zZS-Ve-tMb" secondAttribute="leading" id="ccg-1M-Pps"/>
+                            <constraint firstItem="Ii5-aE-PGi" firstAttribute="top" secondItem="i7M-IV-g8l" secondAttribute="bottom" id="sNR-xi-dXz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" id="T3Y-fM-zg8"/>
+                    <connections>
+                        <outlet property="calendarHeightConstraint" destination="ZnM-QB-bmg" id="kae-85-RDb"/>
+                        <outlet property="calendarView" destination="Ii5-aE-PGi" id="oHu-P9-9FL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K90-Xj-sn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-873" y="716"/>
+            <point key="canvasLocation" x="-874.39999999999998" y="715.59220389805103"/>
         </scene>
         <!--Messages-->
         <scene sceneID="gok-YY-WII">
@@ -75,7 +106,7 @@
         <scene sceneID="cik-2Q-ZUS">
             <objects>
                 <navigationController id="A42-Jl-cbC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="lCs-j6-bU7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lCs-j6-bU7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
