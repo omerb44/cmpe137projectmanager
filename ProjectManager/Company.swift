@@ -9,25 +9,42 @@
 import Foundation
 
 class Company {
-    fileprivate var employees = [Employee]()
-    var name        : String
-    var accessCodes = [String]()
+    var employees       = [Employee]()
+    var name            : String
+    var employeeCount   : Int
+    var accessCodes     = [String]()
     
-    init(name: String) {
-        self.name        = name
-        self.accessCodes = createAccessCodes()
+    init(name: String, employeeCount: Int) {
+        self.name           = name
+        self.employeeCount  = employeeCount
+        createAccessCodes()
     }
     
     func addEmployee(_ employee: Employee) {
         employees.append(employee)
     }
     
-    func removeEmployee(employeeName: String) {
-        
+    func removeEmployee(employeeFullName: String) {
+        for i in 0...employees.count {
+            if employees[i].fullName == employeeFullName {
+                employees.remove(at: i)
+            }
+        }
     }
     
-    func createAccessCodes() -> [String] {
-        
-        return [String]()
+    func removeEmployee(employeeId: Int) {
+        for i in 0...employees.count {
+            if employees[i].id == employeeId {
+                employees.remove(at: i)
+            }
+        }
+    }
+    
+    func createAccessCodes() {
+        var accessCode: String
+        for _ in  0...employeeCount {
+            accessCode = String.random()
+            accessCodes.append(accessCode)
+        }
     }
 }
