@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import FSCalendar
 
-class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, FSCalendarDelegate, FSCalendarDataSource  {
+    @IBOutlet weak var calendarHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var datesTableView: UITableView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        datesTableView.tableFooterView = UIView()
+        
         self.automaticallyAdjustsScrollViewInsets = false
+        self.calendar.appearance.caseOptions = [.headerUsesUpperCase,.weekdayUsesUpperCase]
+        self.calendar.scopeGesture.isEnabled = true
+        
+        datesTableView.tableFooterView = UIView()
+        self.datesTableView.contentInset = UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,5 +57,25 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
     }
+    
+    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
+        calendarHeightConstraint.constant = bounds.height
+        self.view.layoutIfNeeded()
+    }
+    
+    private let formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        return formatter
+    }()
+    
+    func minimumDate(for calendar: FSCalendar) -> Date {
+        return self.formatter.date(from: "2015/01/01")!
+    }
+    
+    func maximumDate(for calendar: FSCalendar) -> Date {
+        return self.formatter.date(from: "2017/10/31")!
+    }
+
 
 }

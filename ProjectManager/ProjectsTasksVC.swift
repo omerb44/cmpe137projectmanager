@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ProjectsTasksVC: UIViewController {
+class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var projectsTableView: UITableView!
 
+    @IBOutlet weak var percentFinishedView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.projectsTableView.tableFooterView = UIView()
+        self.projectsTableView.contentInset = UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,17 +27,25 @@ class ProjectsTasksVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.tabBarController?.title = "My Tasks"
+        self.tabBarController?.title = "My Projects"
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
-    */
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = UITableViewCell()
+        cell = tableView.dequeueReusableCell(withIdentifier: "testCell")!
+        cell.preservesSuperviewLayoutMargins = false
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
+        
+        return cell
+    }
 
 }

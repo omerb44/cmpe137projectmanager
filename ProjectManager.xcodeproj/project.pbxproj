@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0EDC921DDFD086000B9BBC /* ProjectsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */; };
 		3B21CA1B1DCAC70E000976DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */; };
 		3B21CA201DCAC70E000976DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA1E1DCAC70E000976DF /* Main.storyboard */; };
 		3B21CA251DCAC70E000976DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA231DCAC70E000976DF /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 		0F149F5D88B2B6CDB845B079 /* Pods-ProjectManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectManager/Pods-ProjectManager.debug.xcconfig"; sourceTree = "<group>"; };
 		1FA20C96768E3655DE55BA3A /* Pods-ProjectManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectManager/Pods-ProjectManager.release.xcconfig"; sourceTree = "<group>"; };
 		2D2331BBB964AB7CDCC14FFF /* Pods_ProjectManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsCell.swift; sourceTree = "<group>"; };
 		3B21CA171DCAC70E000976DF /* ProjectManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B21CA1F1DCAC70E000976DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				3B63B1CA1DD947EC00842E72 /* TabBarController.swift */,
 				3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */,
+				3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */,
 				3BC4BCB81DDA943000402387 /* CalendarVC.swift */,
 				3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */,
 				3BC4BCBC1DDA95B100402387 /* MessagesVC.swift */,
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0EDC921DDFD086000B9BBC /* ProjectsCell.swift in Sources */,
 				3BC4BCBD1DDA95B100402387 /* MessagesVC.swift in Sources */,
 				3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */,
 				3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */,
