@@ -15,6 +15,7 @@ class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.projectsTableView.layoutSubviews()
         self.projectsTableView.tableFooterView = UIView()
         self.projectsTableView.contentInset = UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0)
     }
@@ -39,13 +40,27 @@ class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
-        cell = tableView.dequeueReusableCell(withIdentifier: "testCell")!
+        let cell = projectsTableView.dequeueReusableCell(withIdentifier: "testCell")!
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
-        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showProjectDetail"?:
+            let destination = segue.destination as! ProjectDetailVC
+            let cellIndex = projectsTableView.indexPathForSelectedRow
+            let cell = projectsTableView.cellForRow(at: cellIndex!) as! ProjectsCell
+            destination.title = cell.projectNameLabel.text
+            break
+        default: break
+        }
     }
 
 }

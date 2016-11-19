@@ -26,6 +26,8 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         
         datesTableView.tableFooterView = UIView()
         self.datesTableView.contentInset = UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0)
+        
+        self.navigationController?.navigationBar.backItem?.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Calendar"), style: UIBarButtonItemStyle.done, target: self, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +58,10 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {

@@ -22,7 +22,7 @@ class Company {
         employees.append(employee)
     }
     
-    func removeEmployee(_ employee: Employee) {
+    func removeEmployee(employeeName: String) {
         
     }
     

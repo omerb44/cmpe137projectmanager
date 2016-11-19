@@ -10,19 +10,37 @@ import Foundation
 
 class MiddleLevelEmployee: Employee {
     
-    var firstName: String
-    var lastName: String
-    var email: String
+    var id          : Int
+    var firstName   : String
+    var lastName    : String
+    var email       : String
+    var fullName    : String
+    
+    var hashValue: Int {
+        return self.id
+    }
+    
+    static func ==(lhs: MiddleLevelEmployee, rhs: MiddleLevelEmployee) -> Bool {
+        return lhs.id == rhs.id
+    }
     
     init(firstName: String, lastName: String, email: String) {
+        self.id         = 0
+        self.id         = employeeID.id + 1
+        employeeID.id  += 1
         self.firstName  = firstName
         self.lastName   = lastName
         self.email      = email
+        self.fullName   = firstName + " " + lastName
     }
 
-    func createTask() -> Task {
+    func createTask(description: String, workingEmployees: [LowLevelEmployee], deadLine: Date) -> Task {
+        return Task(description: description, workingEmployees: workingEmployees, deadLine: deadLine)
+    }
+    
+    func sendMessage(to: Employee, subject: String, message: String, date: Date) {
+        let message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
         
-        return Task()
     }
     
   /*  func createCalendarDate() -> Calendar {

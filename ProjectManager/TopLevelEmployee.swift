@@ -10,15 +10,35 @@ import Foundation
 
 class TopLevelEmployee: Employee {
     
-    var firstName: String
-    var lastName: String
-    var email: String
+    var id          : Int
+    var firstName   : String
+    var lastName    : String
+    var fullName    : String
+    var email       : String
+    
+    var hashValue: Int {
+        return self.id
+    }
+    
+    static func ==(lhs: TopLevelEmployee, rhs: TopLevelEmployee) -> Bool {
+        return lhs.id == rhs.id
+    }
     
     init(firstName: String, lastName: String, email: String) {
+        self.id         = 0
+        self.id         = employeeID.id + 1
+        employeeID.id  += 1
         self.firstName  = firstName
         self.lastName   = lastName
         self.email      = email
+        self.fullName   = firstName + " " + lastName
     }
+    
+    func sendMessage(to: Employee, subject: String, message: String, date: Date) {
+        let message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
+        
+    }
+    
    /*
     func registerCompany(companyName: String) -> Company {
         
@@ -26,9 +46,8 @@ class TopLevelEmployee: Employee {
     }
     
  */
-    func createTask() -> Task {
-        
-        return Task()
+    func createTask(description: String, workingEmployees: [LowLevelEmployee], deadLine: Date) -> Task {
+        return Task(description: description, workingEmployees: workingEmployees, deadLine: deadLine)
     }
     
     func createCalendarDate() -> CalendarDate {
