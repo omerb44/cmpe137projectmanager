@@ -37,6 +37,10 @@
 		3BC4BCB91DDA943000402387 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCB81DDA943000402387 /* CalendarVC.swift */; };
 		3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */; };
 		3BC4BCBD1DDA95B100402387 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCBC1DDA95B100402387 /* MessagesVC.swift */; };
+		3BEAA27C1DE1929A008BF850 /* NewDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA27B1DE1929A008BF850 /* NewDateVC.swift */; };
+		3BEAA27E1DE192EC008BF850 /* NewMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA27D1DE192EC008BF850 /* NewMessageVC.swift */; };
+		3BEAA2801DE19325008BF850 /* NewProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA27F1DE19325008BF850 /* NewProjectVC.swift */; };
+		3BEAA2821DE19413008BF850 /* MessagesAllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA2811DE19413008BF850 /* MessagesAllVC.swift */; };
 		97E6B4B104507D1E4C286AF7 /* Pods_ProjectManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2331BBB964AB7CDCC14FFF /* Pods_ProjectManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +80,10 @@
 		3BC4BCB81DDA943000402387 /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		3BC4BCBC1DDA95B100402387 /* MessagesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		3BEAA27B1DE1929A008BF850 /* NewDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDateVC.swift; sourceTree = "<group>"; };
+		3BEAA27D1DE192EC008BF850 /* NewMessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageVC.swift; sourceTree = "<group>"; };
+		3BEAA27F1DE19325008BF850 /* NewProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProjectVC.swift; sourceTree = "<group>"; };
+		3BEAA2811DE19413008BF850 /* MessagesAllVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesAllVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,12 +152,16 @@
 				3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */,
 				3BC4BCB81DDA943000402387 /* CalendarVC.swift */,
 				3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */,
+				3BEAA2811DE19413008BF850 /* MessagesAllVC.swift */,
 				3B0EDC9B1DE07272000B9BBC /* MessagesDetailVC.swift */,
 				3BC4BCBC1DDA95B100402387 /* MessagesVC.swift */,
 				3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */,
 				3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */,
 				3B0EDC991DE06DF1000B9BBC /* RecentsVC.swift */,
 				3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */,
+				3BEAA27B1DE1929A008BF850 /* NewDateVC.swift */,
+				3BEAA27D1DE192EC008BF850 /* NewMessageVC.swift */,
+				3BEAA27F1DE19325008BF850 /* NewProjectVC.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -331,7 +343,10 @@
 				3B0EDC921DDFD086000B9BBC /* ProjectsCell.swift in Sources */,
 				3BC4BCBD1DDA95B100402387 /* MessagesVC.swift in Sources */,
 				3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */,
+				3BEAA2821DE19413008BF850 /* MessagesAllVC.swift in Sources */,
+				3BEAA27C1DE1929A008BF850 /* NewDateVC.swift in Sources */,
 				3B0EDCA01DE072A3000B9BBC /* MessagesCell.swift in Sources */,
+				3BEAA2801DE19325008BF850 /* NewProjectVC.swift in Sources */,
 				3B0EDC9A1DE06DF1000B9BBC /* RecentsVC.swift in Sources */,
 				3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */,
 				3B0EDC9C1DE07272000B9BBC /* MessagesDetailVC.swift in Sources */,
@@ -350,6 +365,7 @@
 				3B21CA3C1DCACD67000976DF /* TopLevelCalendar.swift in Sources */,
 				3B0EDCA21DE072B5000B9BBC /* RecentsCell.swift in Sources */,
 				3B21CA3A1DCACD52000976DF /* Calendar.swift in Sources */,
+				3BEAA27E1DE192EC008BF850 /* NewMessageVC.swift in Sources */,
 				3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */,
 				3B21CA461DCACE05000976DF /* Company.swift in Sources */,
 				3BC4BCB91DDA943000402387 /* CalendarVC.swift in Sources */,
