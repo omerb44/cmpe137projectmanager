@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uQf-lc-BSd" id="2py-eC-RGe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 Nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3V-tH-eok">
@@ -421,7 +421,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4FT-hG-sak" id="c1c-XE-ppm">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Management App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj0-dT-PWD">
@@ -517,6 +517,51 @@
                     <view key="view" contentMode="scaleToFill" id="loe-Ha-HA8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Projecttitle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KeI-8q-Rra">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4R5-wl-Fxw">
+                                <rect key="frame" x="16" y="240" width="343" height="86"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="501325599.41106099">
+                                    <!--2016-11-20 09:06:39 +0000-->
+                                </date>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KbM-Cd-5DR">
+                                <rect key="frame" x="16" y="139" width="343" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projectdescription:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cS-Uf-1vl">
+                                <rect key="frame" x="16" y="110" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deadline:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mps-8e-g4i">
+                                <rect key="frame" x="16" y="211" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tasks:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0y-iO-ft5">
+                                <rect key="frame" x="16" y="334" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Project" id="UnS-fk-Sdx">
@@ -526,12 +571,18 @@
                                 <action selector="closeView:" destination="71A-qE-OWc" id="2S4-he-hqN"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="W5f-li-ONk">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="projectNameTextField" destination="KeI-8q-Rra" id="QWH-Rp-DZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJl-Du-m20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2994" y="1422"/>
+            <point key="canvasLocation" x="-2994.4000000000001" y="1421.7391304347827"/>
         </scene>
         <!--My Projects-->
         <scene sceneID="qmh-ku-jeE">
@@ -555,7 +606,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5dP-WI-TMj" id="bW7-lz-dea">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Management App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-Fg-VCc">
@@ -709,7 +760,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ay7-ws-Jee" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Projects" image="Today" id="ij0-kJ-tNk"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="n66-Jx-e7N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n66-Jx-e7N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -733,7 +784,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rLT-0i-OcK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" id="T3Y-fM-zg8"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ljs-ux-pVD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ljs-ux-pVD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -757,7 +808,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qLz-bb-fYX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Messages" image="Group Message" id="yQ7-YM-VeF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="h3n-Tk-Vbe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h3n-Tk-Vbe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -781,7 +832,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LWG-4g-yQU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Recents" image="Past" id="lZn-bH-lnM"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="o6d-J6-LkF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o6d-J6-LkF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -805,7 +856,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fp1-eC-5cK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="Pf8-LB-TOd"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Amu-2e-ONf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Amu-2e-ONf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -951,7 +1002,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b3k-dz-xkc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Aq6-bx-TNp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aq6-bx-TNp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -974,7 +1025,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PqM-Q0-sSj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dcm-Ug-KhK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dcm-Ug-KhK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -997,7 +1048,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qcG-NO-rcB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GJV-Y5-TE0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GJV-Y5-TE0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

@@ -35,7 +35,7 @@ class TopLevelEmployee: Employee {
     }
     
     func sendMessage(to: Employee, subject: String, message: String, date: Date) {
-        let message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
+        var message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
         
     }
     
