@@ -11,6 +11,11 @@
 		3B0EDC941DE05353000B9BBC /* ProjectDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC931DE05353000B9BBC /* ProjectDetailVC.swift */; };
 		3B0EDC961DE058BB000B9BBC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC951DE058BB000B9BBC /* Message.swift */; };
 		3B0EDC981DE0631A000B9BBC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC971DE0631A000B9BBC /* Extensions.swift */; };
+		3B0EDC9A1DE06DF1000B9BBC /* RecentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC991DE06DF1000B9BBC /* RecentsVC.swift */; };
+		3B0EDC9C1DE07272000B9BBC /* MessagesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC9B1DE07272000B9BBC /* MessagesDetailVC.swift */; };
+		3B0EDC9E1DE07287000B9BBC /* RecentsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */; };
+		3B0EDCA01DE072A3000B9BBC /* MessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */; };
+		3B0EDCA21DE072B5000B9BBC /* RecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */; };
 		3B21CA1B1DCAC70E000976DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */; };
 		3B21CA201DCAC70E000976DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA1E1DCAC70E000976DF /* Main.storyboard */; };
 		3B21CA251DCAC70E000976DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA231DCAC70E000976DF /* LaunchScreen.storyboard */; };
@@ -43,6 +48,11 @@
 		3B0EDC931DE05353000B9BBC /* ProjectDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailVC.swift; sourceTree = "<group>"; };
 		3B0EDC951DE058BB000B9BBC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3B0EDC971DE0631A000B9BBC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3B0EDC991DE06DF1000B9BBC /* RecentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsVC.swift; sourceTree = "<group>"; };
+		3B0EDC9B1DE07272000B9BBC /* MessagesDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesDetailVC.swift; sourceTree = "<group>"; };
+		3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsDetailVC.swift; sourceTree = "<group>"; };
+		3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesCell.swift; sourceTree = "<group>"; };
+		3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsCell.swift; sourceTree = "<group>"; };
 		3B21CA171DCAC70E000976DF /* ProjectManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B21CA1F1DCAC70E000976DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,7 +144,12 @@
 				3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */,
 				3BC4BCB81DDA943000402387 /* CalendarVC.swift */,
 				3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */,
+				3B0EDC9B1DE07272000B9BBC /* MessagesDetailVC.swift */,
 				3BC4BCBC1DDA95B100402387 /* MessagesVC.swift */,
+				3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */,
+				3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */,
+				3B0EDC991DE06DF1000B9BBC /* RecentsVC.swift */,
+				3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -316,7 +331,11 @@
 				3B0EDC921DDFD086000B9BBC /* ProjectsCell.swift in Sources */,
 				3BC4BCBD1DDA95B100402387 /* MessagesVC.swift in Sources */,
 				3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */,
+				3B0EDCA01DE072A3000B9BBC /* MessagesCell.swift in Sources */,
+				3B0EDC9A1DE06DF1000B9BBC /* RecentsVC.swift in Sources */,
 				3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */,
+				3B0EDC9C1DE07272000B9BBC /* MessagesDetailVC.swift in Sources */,
+				3B0EDC9E1DE07287000B9BBC /* RecentsDetailVC.swift in Sources */,
 				3B21CA321DCACC89000976DF /* TopLevelEmployee.swift in Sources */,
 				3B21CA341DCACCCB000976DF /* MiddleLevelEmployee.swift in Sources */,
 				3B0EDC961DE058BB000B9BBC /* Message.swift in Sources */,
@@ -329,6 +348,7 @@
 				3B21CA1B1DCAC70E000976DF /* AppDelegate.swift in Sources */,
 				3B21CA421DCACDD0000976DF /* Project.swift in Sources */,
 				3B21CA3C1DCACD67000976DF /* TopLevelCalendar.swift in Sources */,
+				3B0EDCA21DE072B5000B9BBC /* RecentsCell.swift in Sources */,
 				3B21CA3A1DCACD52000976DF /* Calendar.swift in Sources */,
 				3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */,
 				3B21CA461DCACE05000976DF /* Company.swift in Sources */,

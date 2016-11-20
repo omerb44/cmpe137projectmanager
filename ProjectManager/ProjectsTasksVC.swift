@@ -17,7 +17,8 @@ class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         // Do any additional setup after loading the view.
         self.projectsTableView.layoutSubviews()
         self.projectsTableView.tableFooterView = UIView()
-        self.projectsTableView.contentInset = UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

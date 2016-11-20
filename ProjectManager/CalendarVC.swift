@@ -24,10 +24,8 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         self.calendar.appearance.caseOptions = [.headerUsesUpperCase,.weekdayUsesUpperCase]
         self.calendar.scopeGesture.isEnabled = true
         
-        datesTableView.tableFooterView = UIView()
-        self.datesTableView.contentInset = UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0)
+        self.datesTableView.tableFooterView = UIView()
         
-        self.navigationController?.navigationBar.backItem?.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Calendar"), style: UIBarButtonItemStyle.done, target: self, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +35,7 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.tabBarController?.title = "My Calendar"
+        //self.tabBarController?.title = "My Calendar"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,9 +54,6 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         return cell
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
-    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
