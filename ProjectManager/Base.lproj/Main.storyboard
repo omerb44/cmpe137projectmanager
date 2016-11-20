@@ -877,19 +877,19 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="SRv-ob-1OB" firstAttribute="top" secondItem="flS-Ay-w5P" secondAttribute="topMargin" constant="1" id="75U-hW-aSQ"/>
+                                                <constraint firstItem="SRv-ob-1OB" firstAttribute="leading" secondItem="flS-Ay-w5P" secondAttribute="leadingMargin" id="0c6-wq-Akc"/>
                                                 <constraint firstItem="SRv-ob-1OB" firstAttribute="leading" secondItem="A4q-KO-KXt" secondAttribute="leading" id="Glx-iI-2zm"/>
+                                                <constraint firstItem="SOJ-LO-5Xl" firstAttribute="trailing" secondItem="flS-Ay-w5P" secondAttribute="trailingMargin" id="IJx-1a-U0i"/>
                                                 <constraint firstItem="SRv-ob-1OB" firstAttribute="centerY" secondItem="SOJ-LO-5Xl" secondAttribute="centerY" constant="1" id="Idn-7U-SL0"/>
                                                 <constraint firstItem="A4q-KO-KXt" firstAttribute="top" secondItem="SOJ-LO-5Xl" secondAttribute="bottom" constant="1" id="IoV-aw-2oG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bh9-bC-KcP" secondAttribute="bottom" constant="-1" id="JKm-1r-iWB"/>
                                                 <constraint firstItem="SOJ-LO-5Xl" firstAttribute="leading" secondItem="SRv-ob-1OB" secondAttribute="trailing" constant="15" id="NBW-JO-09i"/>
                                                 <constraint firstItem="Bh9-bC-KcP" firstAttribute="top" secondItem="SRv-ob-1OB" secondAttribute="bottom" constant="20" id="R00-fS-nwF"/>
-                                                <constraint firstItem="Bh9-bC-KcP" firstAttribute="bottom" secondItem="flS-Ay-w5P" secondAttribute="bottomMargin" constant="1" id="XTX-LN-J8I"/>
+                                                <constraint firstItem="SRv-ob-1OB" firstAttribute="top" secondItem="flS-Ay-w5P" secondAttribute="topMargin" constant="1" id="cn3-iJ-0nL"/>
                                                 <constraint firstItem="A4q-KO-KXt" firstAttribute="trailing" secondItem="Bh9-bC-KcP" secondAttribute="trailing" id="gJy-RI-ysi"/>
                                                 <constraint firstItem="SRv-ob-1OB" firstAttribute="baseline" secondItem="SOJ-LO-5Xl" secondAttribute="baseline" constant="1" id="j7Q-0D-hZH"/>
-                                                <constraint firstItem="SRv-ob-1OB" firstAttribute="leading" secondItem="flS-Ay-w5P" secondAttribute="leadingMargin" id="jFh-bI-XZu"/>
+                                                <constraint firstItem="SOJ-LO-5Xl" firstAttribute="trailing" secondItem="A4q-KO-KXt" secondAttribute="trailing" id="nSq-DN-tbH"/>
                                                 <constraint firstItem="SRv-ob-1OB" firstAttribute="leading" secondItem="Bh9-bC-KcP" secondAttribute="leading" id="vYt-xD-JcE"/>
-                                                <constraint firstAttribute="trailing" secondItem="A4q-KO-KXt" secondAttribute="trailing" constant="8" id="w7h-lu-tPz"/>
-                                                <constraint firstItem="SOJ-LO-5Xl" firstAttribute="trailing" secondItem="flS-Ay-w5P" secondAttribute="trailingMargin" id="yej-YM-mqR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -897,6 +897,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tG3-Il-nVw" id="Bja-V4-ukG"/>
+                                    <outlet property="delegate" destination="tG3-Il-nVw" id="e96-sU-IVO"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -908,6 +912,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trash" id="ne0-zu-qxW"/>
+                    <connections>
+                        <outlet property="allMessagesTableView" destination="cxa-FL-DpG" id="Dxc-bY-V13"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jt-lM-kf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
