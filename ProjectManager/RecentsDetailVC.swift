@@ -8,12 +8,15 @@
 
 import UIKit
 
-class RecentsDetailVC: UIViewController {
+class RecentsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var finishingDateLabel: UILabel!
+    @IBOutlet weak var projectManagerLabel: UILabel!
+    @IBOutlet weak var recentTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.recentTableView.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +24,21 @@ class RecentsDetailVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = UITableViewCell()
+        cell = recentTableView.dequeueReusableCell(withIdentifier: "taskCell")!
+        cell.preservesSuperviewLayoutMargins = false
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
+        return cell
+    }
 
 }

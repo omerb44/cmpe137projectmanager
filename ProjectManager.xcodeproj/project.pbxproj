@@ -34,6 +34,7 @@
 		3B63B1C91DD9440400842E72 /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B1C81DD9440400842E72 /* CalendarDate.swift */; };
 		3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B1CA1DD947EC00842E72 /* TabBarController.swift */; };
 		3BBC4C8A1DE29BF900D5460B /* NewProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC4C891DE29BF900D5460B /* NewProjectCell.swift */; };
+		3BBC4C8C1DE2E31500D5460B /* CalendarDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */; };
 		3BC4BCB71DDA92F100402387 /* ProjectsTasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */; };
 		3BC4BCB91DDA943000402387 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCB81DDA943000402387 /* CalendarVC.swift */; };
 		3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */; };
@@ -78,6 +79,7 @@
 		3B63B1C81DD9440400842E72 /* CalendarDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
 		3B63B1CA1DD947EC00842E72 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3BBC4C891DE29BF900D5460B /* NewProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProjectCell.swift; sourceTree = "<group>"; };
+		3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDetailVC.swift; sourceTree = "<group>"; };
 		3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTasksVC.swift; sourceTree = "<group>"; };
 		3BC4BCB81DDA943000402387 /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				3B0EDC931DE05353000B9BBC /* ProjectDetailVC.swift */,
 				3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */,
 				3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */,
+				3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */,
 				3BC4BCB81DDA943000402387 /* CalendarVC.swift */,
 				3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */,
 				3BEAA2811DE19413008BF850 /* MessagesAllVC.swift */,
@@ -346,6 +349,7 @@
 				3B0EDC921DDFD086000B9BBC /* ProjectsCell.swift in Sources */,
 				3BC4BCBD1DDA95B100402387 /* MessagesVC.swift in Sources */,
 				3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */,
+				3BBC4C8C1DE2E31500D5460B /* CalendarDetailVC.swift in Sources */,
 				3BEAA2821DE19413008BF850 /* MessagesAllVC.swift in Sources */,
 				3BEAA27C1DE1929A008BF850 /* NewDateVC.swift in Sources */,
 				3B0EDCA01DE072A3000B9BBC /* MessagesCell.swift in Sources */,
