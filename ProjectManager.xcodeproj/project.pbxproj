@@ -35,6 +35,7 @@
 		3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B1CA1DD947EC00842E72 /* TabBarController.swift */; };
 		3BBC4C8A1DE29BF900D5460B /* NewProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC4C891DE29BF900D5460B /* NewProjectCell.swift */; };
 		3BBC4C8C1DE2E31500D5460B /* CalendarDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */; };
+		3BBC4C8E1DE3048900D5460B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BBC4C8D1DE3048900D5460B /* GoogleService-Info.plist */; };
 		3BC4BCB71DDA92F100402387 /* ProjectsTasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */; };
 		3BC4BCB91DDA943000402387 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCB81DDA943000402387 /* CalendarVC.swift */; };
 		3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */; };
@@ -80,6 +81,7 @@
 		3B63B1CA1DD947EC00842E72 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3BBC4C891DE29BF900D5460B /* NewProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProjectCell.swift; sourceTree = "<group>"; };
 		3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDetailVC.swift; sourceTree = "<group>"; };
+		3BBC4C8D1DE3048900D5460B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTasksVC.swift; sourceTree = "<group>"; };
 		3BC4BCB81DDA943000402387 /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */,
 				3B0EDC971DE0631A000B9BBC /* Extensions.swift */,
 				3B21CA261DCAC70E000976DF /* Info.plist */,
+				3BBC4C8D1DE3048900D5460B /* GoogleService-Info.plist */,
 				3B466C4B1DDB036E00C7C0CB /* Assets.xcassets */,
 				3B21CA2D1DCACB29000976DF /* ViewController */,
 				3B21CA2C1DCACB1E000976DF /* Classes */,
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B21CA251DCAC70E000976DF /* LaunchScreen.storyboard in Resources */,
+				3BBC4C8E1DE3048900D5460B /* GoogleService-Info.plist in Resources */,
 				3B466C4C1DDB036E00C7C0CB /* Assets.xcassets in Resources */,
 				3B21CA201DCAC70E000976DF /* Main.storyboard in Resources */,
 			);
