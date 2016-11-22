@@ -20,10 +20,8 @@ protocol Employee {
     var archivedMessages    : [Message] { get }
     var trashMessages       : [Message] { get }
     var calendar            : Calendar { get }
-    var actualProjects      : [Project] { get }
-    var recentProjects      : [Project] { get }
     
-    func sendMessage(to: Employee, subject: String, message: String, date: Date)
+    func sendMessage(toID: Int, subject: String, message: String, date: Date)
     
 }
 

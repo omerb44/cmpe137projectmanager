@@ -21,8 +21,6 @@ class LowLevelEmployee: Employee, Hashable {
     var archivedMessages    = [Message]()
     var trashMessages       = [Message]()
     var calendar            : Calendar
-    var actualProjects      = [Project]()
-    var recentProjects      = [Project]()
     
     var hashValue: Int {
         return self.id
@@ -47,8 +45,8 @@ class LowLevelEmployee: Employee, Hashable {
         self.tasks.append(task)
     }
     
-    func sendMessage(to: Employee, subject: String, message: String, date: Date) {
-        let message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
+    func sendMessage(toID: Int, subject: String, message: String, date: Date) {
+        let message = Message(senderID: self.id, toID: toID, subject: subject, message: message, date: date, isRead: false)
         sentMessages.append(message)
     }
 

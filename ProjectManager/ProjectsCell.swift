@@ -36,7 +36,7 @@ class ProjectsCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         tagView.layer.cornerRadius = tagView.frame.width / 2
-        tagView.backgroundColor = UIColor.red
+        tagView.backgroundColor = UIColor(red: 230/255, green: 126/255, blue: 34/255, alpha: 0.6)
     }
 
 }

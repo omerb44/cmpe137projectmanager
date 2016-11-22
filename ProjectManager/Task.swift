@@ -10,12 +10,13 @@ import Foundation
 
 class Task {
     var description         : String
-    var workingEmployees    : LowLevelEmployee
+    var workingEmployee     : LowLevelEmployee
     var deadLine            : Date
+    var isAccepted          = false
     
-    init(description: String, workingEmployees: LowLevelEmployee, deadLine: Date) {
+    init(description: String, workingEmployee: LowLevelEmployee, deadLine: Date) {
         self.description        = description
-        self.workingEmployees   = workingEmployees
+        self.workingEmployee    = workingEmployee
         self.deadLine           = deadLine
     }
     

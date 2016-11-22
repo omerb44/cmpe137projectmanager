@@ -9,16 +9,16 @@
 import Foundation
 
 class Message {
-    var sender  : Employee
-    var to      : Employee
-    var subject : String
-    var message : String
-    var date    : Date
-    var isRead  : Bool
+    var senderID : Int
+    var toID     : Int
+    var subject  : String
+    var message  : String
+    var date     : Date
+    var isRead   : Bool
     
-    init(sender: Employee, to: Employee, subject: String, message: String, date: Date, isRead: Bool) {
-        self.sender     = sender
-        self.to         = to
+    init(senderID: Int, toID: Int, subject: String, message: String, date: Date, isRead: Bool) {
+        self.senderID   = senderID
+        self.toID       = toID
         self.subject    = subject
         self.message    = message
         self.date       = date
