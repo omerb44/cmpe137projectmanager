@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Calendar {
-    
+class Calendar {
+    var dates = [CalendarDate]()
     
 }

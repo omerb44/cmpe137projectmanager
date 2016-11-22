@@ -9,10 +9,15 @@
 import Foundation
 
 class Company {
-    var employees       = [Employee]()
-    var name            : String
-    var employeeCount   : Int
-    var accessCodes     = [String]()
+    var topLevelEmployees       = [TopLevelEmployee]()
+    var middleLevelEmployees    = [MiddleLevelEmployee]()
+    var lowLevelEmployees       = [LowLevelEmployee]()
+    var allEmployees            = [Employee]()
+    var name                    : String
+    var employeeCount           : Int
+    var accessCodes             = [String]()
+    var actualProjects          = [Project]()
+    var closedProjects          = [Project]()
     
     init(name: String, employeeCount: Int) {
         self.name           = name
@@ -21,21 +26,21 @@ class Company {
     }
     
     func addEmployee(_ employee: Employee) {
-        employees.append(employee)
+        allEmployees.append(employee)
     }
     
     func removeEmployee(employeeFullName: String) {
-        for i in 0...employees.count {
-            if employees[i].fullName == employeeFullName {
-                employees.remove(at: i)
+        for i in 0...allEmployees.count {
+            if allEmployees[i].fullName == employeeFullName {
+                allEmployees.remove(at: i)
             }
         }
     }
     
     func removeEmployee(employeeId: Int) {
-        for i in 0...employees.count {
-            if employees[i].id == employeeId {
-                employees.remove(at: i)
+        for i in 0...allEmployees.count {
+            if allEmployees[i].id == employeeId {
+                allEmployees.remove(at: i)
             }
         }
     }

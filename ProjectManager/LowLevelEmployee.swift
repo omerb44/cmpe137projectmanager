@@ -10,12 +10,19 @@ import Foundation
 
 class LowLevelEmployee: Employee, Hashable {
 
-    var id          : Int
-    var firstName   : String
-    var lastName    : String
-    var email       : String
-    var fullName    : String
-    var tasks       = [Task]()
+    var id                  : Int
+    var firstName           : String
+    var lastName            : String
+    var email               : String
+    var fullName            : String
+    var tasks               = [Task]()
+    var sentMessages        = [Message]()
+    var receivedMessages    = [Message]()
+    var archivedMessages    = [Message]()
+    var trashMessages       = [Message]()
+    var calendar            : Calendar
+    var actualProjects      = [Project]()
+    var recentProjects      = [Project]()
     
     var hashValue: Int {
         return self.id
@@ -33,6 +40,7 @@ class LowLevelEmployee: Employee, Hashable {
         self.lastName   = lastName
         self.email      = email
         self.fullName   = firstName + " " + lastName
+        self.calendar   = Calendar()
     }
     
     func addTask(task: Task) {
@@ -40,8 +48,8 @@ class LowLevelEmployee: Employee, Hashable {
     }
     
     func sendMessage(to: Employee, subject: String, message: String, date: Date) {
-        var message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
-        
+        let message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
+        sentMessages.append(message)
     }
 
 }

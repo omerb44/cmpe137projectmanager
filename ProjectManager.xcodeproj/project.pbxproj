@@ -24,9 +24,6 @@
 		3B21CA341DCACCCB000976DF /* MiddleLevelEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA331DCACCCB000976DF /* MiddleLevelEmployee.swift */; };
 		3B21CA361DCACCE4000976DF /* LowLevelEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA351DCACCE4000976DF /* LowLevelEmployee.swift */; };
 		3B21CA3A1DCACD52000976DF /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA391DCACD52000976DF /* Calendar.swift */; };
-		3B21CA3C1DCACD67000976DF /* TopLevelCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA3B1DCACD67000976DF /* TopLevelCalendar.swift */; };
-		3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA3D1DCACD87000976DF /* MiddleLevelCalendar.swift */; };
-		3B21CA401DCACD99000976DF /* LowLevelCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA3F1DCACD99000976DF /* LowLevelCalendar.swift */; };
 		3B21CA421DCACDD0000976DF /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA411DCACDD0000976DF /* Project.swift */; };
 		3B21CA441DCACDE9000976DF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA431DCACDE9000976DF /* Task.swift */; };
 		3B21CA461DCACE05000976DF /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA451DCACE05000976DF /* Company.swift */; };
@@ -70,9 +67,6 @@
 		3B21CA331DCACCCB000976DF /* MiddleLevelEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleLevelEmployee.swift; sourceTree = "<group>"; };
 		3B21CA351DCACCE4000976DF /* LowLevelEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowLevelEmployee.swift; sourceTree = "<group>"; };
 		3B21CA391DCACD52000976DF /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
-		3B21CA3B1DCACD67000976DF /* TopLevelCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelCalendar.swift; sourceTree = "<group>"; };
-		3B21CA3D1DCACD87000976DF /* MiddleLevelCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleLevelCalendar.swift; sourceTree = "<group>"; };
-		3B21CA3F1DCACD99000976DF /* LowLevelCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowLevelCalendar.swift; sourceTree = "<group>"; };
 		3B21CA411DCACDD0000976DF /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		3B21CA431DCACDE9000976DF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3B21CA451DCACE05000976DF /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -200,9 +194,6 @@
 			children = (
 				3B63B1C81DD9440400842E72 /* CalendarDate.swift */,
 				3B21CA391DCACD52000976DF /* Calendar.swift */,
-				3B21CA3B1DCACD67000976DF /* TopLevelCalendar.swift */,
-				3B21CA3D1DCACD87000976DF /* MiddleLevelCalendar.swift */,
-				3B21CA3F1DCACD99000976DF /* LowLevelCalendar.swift */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -359,7 +350,6 @@
 				3B0EDCA01DE072A3000B9BBC /* MessagesCell.swift in Sources */,
 				3BEAA2801DE19325008BF850 /* NewProjectVC.swift in Sources */,
 				3B0EDC9A1DE06DF1000B9BBC /* RecentsVC.swift in Sources */,
-				3B21CA3E1DCACD87000976DF /* MiddleLevelCalendar.swift in Sources */,
 				3B0EDC9C1DE07272000B9BBC /* MessagesDetailVC.swift in Sources */,
 				3B0EDC9E1DE07287000B9BBC /* RecentsDetailVC.swift in Sources */,
 				3B21CA321DCACC89000976DF /* TopLevelEmployee.swift in Sources */,
@@ -374,14 +364,12 @@
 				3B63B1C91DD9440400842E72 /* CalendarDate.swift in Sources */,
 				3B21CA1B1DCAC70E000976DF /* AppDelegate.swift in Sources */,
 				3B21CA421DCACDD0000976DF /* Project.swift in Sources */,
-				3B21CA3C1DCACD67000976DF /* TopLevelCalendar.swift in Sources */,
 				3B0EDCA21DE072B5000B9BBC /* RecentsCell.swift in Sources */,
 				3B21CA3A1DCACD52000976DF /* Calendar.swift in Sources */,
 				3BEAA27E1DE192EC008BF850 /* NewMessageVC.swift in Sources */,
 				3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */,
 				3B21CA461DCACE05000976DF /* Company.swift in Sources */,
 				3BC4BCB91DDA943000402387 /* CalendarVC.swift in Sources */,
-				3B21CA401DCACD99000976DF /* LowLevelCalendar.swift in Sources */,
 				3B0EDC941DE05353000B9BBC /* ProjectDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

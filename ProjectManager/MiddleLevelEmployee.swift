@@ -10,11 +10,18 @@ import Foundation
 
 class MiddleLevelEmployee: Employee {
     
-    var id          : Int
-    var firstName   : String
-    var lastName    : String
-    var email       : String
-    var fullName    : String
+    var id                  : Int
+    var firstName           : String
+    var lastName            : String
+    var email               : String
+    var fullName            : String
+    var sentMessages        = [Message]()
+    var receivedMessages    = [Message]()
+    var archivedMessages    = [Message]()
+    var trashMessages       = [Message]()
+    var calendar            : Calendar
+    var actualProjects      = [Project]()
+    var recentProjects      = [Project]()
     
     var hashValue: Int {
         return self.id
@@ -32,15 +39,16 @@ class MiddleLevelEmployee: Employee {
         self.lastName   = lastName
         self.email      = email
         self.fullName   = firstName + " " + lastName
+        self.calendar   = Calendar()
     }
 
-    func createTask(description: String, workingEmployees: [LowLevelEmployee], deadLine: Date) -> Task {
+    func createTask(description: String, workingEmployees: LowLevelEmployee, deadLine: Date) -> Task {
         return Task(description: description, workingEmployees: workingEmployees, deadLine: deadLine)
     }
     
     func sendMessage(to: Employee, subject: String, message: String, date: Date) {
         let message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
-        
+        sentMessages.append(message)
     }
     
   /*  func createCalendarDate() -> Calendar {

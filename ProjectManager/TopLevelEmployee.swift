@@ -10,11 +10,18 @@ import Foundation
 
 class TopLevelEmployee: Employee {
     
-    var id          : Int
-    var firstName   : String
-    var lastName    : String
-    var fullName    : String
-    var email       : String
+    var id                  : Int
+    var firstName           : String
+    var lastName            : String
+    var fullName            : String
+    var email               : String
+    var sentMessages        = [Message]()
+    var receivedMessages    = [Message]()
+    var archivedMessages    = [Message]()
+    var trashMessages       = [Message]()
+    var calendar            : Calendar
+    var actualProjects      = [Project]()
+    var recentProjects      = [Project]()
     
     var hashValue: Int {
         return self.id
@@ -32,11 +39,12 @@ class TopLevelEmployee: Employee {
         self.lastName   = lastName
         self.email      = email
         self.fullName   = firstName + " " + lastName
+        self.calendar   = Calendar()
     }
     
     func sendMessage(to: Employee, subject: String, message: String, date: Date) {
-        var message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
-        
+        let message = Message(sender: self, to: to, subject: subject, message: message, date: date, isRead: false)
+        sentMessages.append(message)
     }
     
    /*
@@ -46,14 +54,14 @@ class TopLevelEmployee: Employee {
     }
     
  */
-    func createTask(description: String, workingEmployees: [LowLevelEmployee], deadLine: Date) -> Task {
+    func createTask(description: String, workingEmployees: LowLevelEmployee, deadLine: Date) -> Task {
         return Task(description: description, workingEmployees: workingEmployees, deadLine: deadLine)
     }
     
-    func createCalendarDate() -> CalendarDate {
+  /*  func createCalendarDate() -> CalendarDate {
         
         return CalendarDate()
-    }
+    } */
     
     func shareCalendarDate(_ calendarDate: CalendarDate) {
     
