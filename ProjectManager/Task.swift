@@ -20,4 +20,13 @@ class Task {
         self.deadLine           = deadLine
     }
     
+    func toAnyObject() -> Any {
+        return [
+            "description"       : self.description,
+            "workingEmployee"   : self.workingEmployee.toAnyObject(),
+            "deadLine"          : self.deadLine.description,
+            "isAccepted"        : self.isAccepted
+        ]
+    }
+    
 }

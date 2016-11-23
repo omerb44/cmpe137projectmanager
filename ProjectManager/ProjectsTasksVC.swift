@@ -8,16 +8,20 @@
 
 import UIKit
 
-class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var projectsTableView: UITableView!
 
+class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var projectsTableView: UITableView!
     @IBOutlet weak var percentFinishedView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.projectsTableView.layoutSubviews()
         self.projectsTableView.tableFooterView = UIView()
         
+        var employee = LowLevelEmployee(firstName: "Oemer", lastName: "Baydar", email: "oemerb44@gmail.com")
+        employee.sentMessages.append(Message(senderID: employee.id, toID: 2, subject: "Subjectsdfa", message: "Hello World", date: Date(), isRead: false))
         
     }
 

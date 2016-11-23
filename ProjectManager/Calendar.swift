@@ -11,4 +11,12 @@ import Foundation
 class Calendar {
     var dates = [CalendarDate]()
     
+    func toAnyObject() -> Any {
+        var allCalendar = [Any]()
+        for date in dates {
+            allCalendar.append(date.toAnyObject())
+        }
+        return allCalendar
+    }
+    
 }

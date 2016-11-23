@@ -39,6 +39,29 @@ class MiddleLevelEmployee: Employee {
         self.fullName   = firstName + " " + lastName
         self.calendar   = Calendar()
     }
+    
+    func toAnyObjectArray(messageArray: [Message]) -> Any {
+        var anyMessage = [Any]()
+        for message in messageArray {
+            anyMessage.append(message.toAnyObject())
+        }
+        return anyMessage
+    }
+    
+    func toAnyObject() -> Any {
+        return [
+            "id"            : self.id,
+            "firstName"     : self.firstName,
+            "lastName"      : self.lastName,
+            "fullName"      : self.fullName,
+            "email"         : self.email,
+            "sentMail"      : toAnyObjectArray(messageArray: self.sentMessages),
+            "receivedMail"  : toAnyObjectArray(messageArray: self.receivedMessages),
+            "archivedMail"  : toAnyObjectArray(messageArray: self.archivedMessages),
+            "trashMessages" : toAnyObjectArray(messageArray: self.trashMessages),
+            "calendar"      : self.calendar.toAnyObject()
+        ]
+    }
 
     func createTask(description: String, workingEmployees: LowLevelEmployee, deadLine: Date) -> Task {
         return Task(description: description, workingEmployee: workingEmployees, deadLine: deadLine)

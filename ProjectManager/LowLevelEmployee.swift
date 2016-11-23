@@ -15,7 +15,6 @@ class LowLevelEmployee: Employee, Hashable {
     var lastName            : String
     var email               : String
     var fullName            : String
-    var tasks               = [Task]()
     var sentMessages        = [Message]()
     var receivedMessages    = [Message]()
     var archivedMessages    = [Message]()
@@ -41,8 +40,27 @@ class LowLevelEmployee: Employee, Hashable {
         self.calendar   = Calendar()
     }
     
-    func addTask(task: Task) {
-        self.tasks.append(task)
+    func toAnyObjectArray(messageArray: [Message]) -> Any {
+        var anyMessage = [Any]()
+        for message in messageArray {
+            anyMessage.append(message.toAnyObject())
+        }
+        return anyMessage
+    }
+    
+    func toAnyObject() -> Any {
+        return [
+            "id"            : self.id,
+            "firstName"     : self.firstName,
+            "lastName"      : self.lastName,
+            "fullName"      : self.fullName,
+            "email"         : self.email,
+            "sentMail"      : toAnyObjectArray(messageArray: self.sentMessages),
+            "receivedMail"  : toAnyObjectArray(messageArray: self.receivedMessages),
+            "archivedMail"  : toAnyObjectArray(messageArray: self.archivedMessages),
+            "trashMessages" : toAnyObjectArray(messageArray: self.trashMessages),
+            "calendar"      : self.calendar.toAnyObject()
+        ]
     }
     
     func sendMessage(toID: Int, subject: String, message: String, date: Date) {

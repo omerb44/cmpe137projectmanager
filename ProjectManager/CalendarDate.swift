@@ -19,4 +19,12 @@ class CalendarDate {
         self.date   = date
     }
     
+    func toAnyObject() -> Any {
+        return [
+            "titel" : self.titel,
+            "place" : self.place,
+            "date"  : self.date
+        ]
+    }
+    
 }

@@ -22,6 +22,7 @@ protocol Employee {
     var calendar            : Calendar { get }
     
     func sendMessage(toID: Int, subject: String, message: String, date: Date)
+    func toAnyObject() -> Any
     
 }
 

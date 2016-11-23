@@ -24,4 +24,16 @@ class Message {
         self.date       = date
         self.isRead     = false
     }
+    
+    func toAnyObject() -> Any {
+        return [
+            "senderID"  : self.senderID,
+            "toID"      : self.toID,
+            "subject"   : self.subject,
+            "message"   : self.message,
+            "date"      : self.date,
+            "isRead"    : self.isRead
+        ]
+    }
+    
 }

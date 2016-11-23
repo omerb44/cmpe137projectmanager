@@ -73,6 +73,7 @@
 		3B466C4B1DDB036E00C7C0CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B63B1C81DD9440400842E72 /* CalendarDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
 		3B63B1CA1DD947EC00842E72 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3B6416BF1DE516180073B160 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		3BBC4C891DE29BF900D5460B /* NewProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProjectCell.swift; sourceTree = "<group>"; };
 		3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDetailVC.swift; sourceTree = "<group>"; };
 		3BBC4C8D1DE3048900D5460B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */,
+				3B6416BF1DE516180073B160 /* Bridging-Header.h */,
 				3B0EDC971DE0631A000B9BBC /* Extensions.swift */,
 				3B21CA261DCAC70E000976DF /* Info.plist */,
 				3BBC4C8D1DE3048900D5460B /* GoogleService-Info.plist */,

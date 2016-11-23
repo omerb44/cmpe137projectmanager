@@ -40,6 +40,29 @@ class TopLevelEmployee: Employee {
         self.calendar   = Calendar()
     }
     
+    func toAnyObjectArray(messageArray: [Message]) -> Any {
+        var anyMessage = [Any]()
+        for message in messageArray {
+            anyMessage.append(message.toAnyObject())
+        }
+        return anyMessage
+    }
+    
+    func toAnyObject() -> Any {
+        return [
+            "id"            : self.id,
+            "firstName"     : self.firstName,
+            "lastName"      : self.lastName,
+            "fullName"      : self.fullName,
+            "email"         : self.email,
+            "sentMail"      : toAnyObjectArray(messageArray: self.sentMessages),
+            "receivedMail"  : toAnyObjectArray(messageArray: self.receivedMessages),
+            "archivedMail"  : toAnyObjectArray(messageArray: self.archivedMessages),
+            "trashMessages" : toAnyObjectArray(messageArray: self.trashMessages),
+            "calendar"      : self.calendar.toAnyObject()
+        ]
+    }
+    
     func sendMessage(toID: Int, subject: String, message: String, date: Date) {
         let message = Message(senderID: self.id, toID: toID, subject: subject, message: message, date: date, isRead: false)
         sentMessages.append(message)

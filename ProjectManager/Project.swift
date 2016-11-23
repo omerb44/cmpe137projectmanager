@@ -28,4 +28,32 @@ class Project {
         self.tasks                  = tasks
     }
     
+    func toAnyObject() -> Any {
+        return [
+            "projectName"       : self.projectName,
+            "projectManager"    : self.projectManager.toAnyObject(),
+            "startDate"         : self.startDate.description,
+            "deadLine"          : self.deadLine.description,
+            "finishedPercentage": self.finishedPercentage,
+            "developmentTeam"   : toAnyObject(self.developmentTeam),
+            "tasks"             : toAnyObject(self.tasks)
+        ]
+    }
+    
+    func toAnyObject(lowLevel: [LowLevelEmployee]) -> Any {
+        var allEmployee = [Any]()
+        for employee in lowLevel {
+            allEmployee.append(employee.toAnyObject())
+        }
+        return allEmployee
+    }
+    
+    func toAnyObject(tasks: [Task]) -> Any {
+        var allTasks = [Any]()
+        for task in tasks {
+            allTasks.append(task.toAnyObject())
+        }
+        return allTasks
+    }
+    
 }
