@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -20,9 +20,14 @@ class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         self.projectsTableView.layoutSubviews()
         self.projectsTableView.tableFooterView = UIView()
         
-        var employee = LowLevelEmployee(firstName: "Oemer", lastName: "Baydar", email: "oemerb44@gmail.com")
-        employee.sentMessages.append(Message(senderID: employee.id, toID: 2, subject: "Subjectsdfa", message: "Hello World", date: Date(), isRead: false))
-        
+        let employee = LowLevelEmployee(firstName: "Oemer", lastName: "Baydar", email: "oemerb44@gmail.com")
+        let message = Message(senderID: employee.id, toID: 2, subject: "Chad ist ein Hund", message: "Hello World", date: Date(), isRead: false)
+        let message1 = Message(senderID: employee.id, toID: 2, subject: "Subjectsdfa", message: "Hello World", date: Date(), isRead: false)
+        employee.sentMessages.append(message)
+        employee.sentMessages.append(message1)
+        let rootRef = FIRDatabase.database().reference()
+        let path = rootRef.child("Message")
+        path.setValue(employee.toAnyObject())
     }
 
     override func didReceiveMemoryWarning() {

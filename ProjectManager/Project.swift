@@ -27,16 +27,15 @@ class Project {
         self.finishedPercentage     = 0.0
         self.tasks                  = tasks
     }
-    
+  
     func toAnyObject() -> Any {
         return [
-            "projectName"       : self.projectName,
-            "projectManager"    : self.projectManager.toAnyObject(),
-            "startDate"         : self.startDate.description,
-            "deadLine"          : self.deadLine.description,
-            "finishedPercentage": self.finishedPercentage,
-            "developmentTeam"   : toAnyObject(self.developmentTeam),
-            "tasks"             : toAnyObject(self.tasks)
+            "projectName" : self.projectName,
+            "projectManager" : self.projectManager,
+            "startDate" : self.startDate.description,
+            "deadLine" : self.deadLine.description,
+            "developmentTeam" : self.toAnyObject(lowLevel: self.developmentTeam),
+            "tasks" : self.toAnyObject(tasks: self.tasks)
         ]
     }
     

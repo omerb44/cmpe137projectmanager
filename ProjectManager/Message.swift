@@ -31,7 +31,7 @@ class Message {
             "toID"      : self.toID,
             "subject"   : self.subject,
             "message"   : self.message,
-            "date"      : self.date,
+            "date"      : self.date.description,
             "isRead"    : self.isRead
         ]
     }
