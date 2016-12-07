@@ -21,6 +21,28 @@ class NewProjectVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         tasksCount += 1
         self.tasksTableView.reloadData()
     }
+    @IBAction func done(_ sender: Any) {
+        let date = Date()
+        if !(projectNameTextField.text?.isEmpty)! && deadLineDatePicker.date > date {
+            var taskDescriptions = [String]()
+            for cell in tasksTableView.visibleCells {
+                let z = cell as! NewProjectCell
+                if !(z.taskDescriptionTextField.text?.isEmpty)! {
+                    taskDescriptions.append(z.taskDescriptionTextField.text!)
+                }
+            }
+            var tasks = [Task]()
+            for taskDecription in taskDescriptions {
+                let task = Task(description: taskDecription, workingEmployee: LowLevelEmployee(firstName: "Oemer", lastName: "Baydar", email: "oemerb44@gmail.com", userName: "", password: "", company: ""), deadLine: deadLineDatePicker.date)
+                tasks.append(task)
+            }
+            let project = Project(projectName: projectNameTextField.text!, projectManager: MiddleLevelEmployee(firstName: "Oemer", lastName: "Baydar", email: "oemerb44@gmail.com", userName: "", password: "", company: ""), startDate: date, deadLine: deadLineDatePicker.date, tasks: tasks)
+            allProjects.allProjects.append(project)
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    var allProjects = AllProjectsArray()
 
     var tasksCount = 1
 

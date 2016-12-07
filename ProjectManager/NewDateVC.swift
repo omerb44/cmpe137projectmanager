@@ -9,9 +9,19 @@
 import UIKit
 
 class NewDateVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var calendar = Calendar()
 
     @IBAction func closeView(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    @IBAction func save(_ sender: Any) {
+        let date = Date()
+        if !(datePlace.text?.isEmpty)! && !(dateTitel.text?.isEmpty)! && dateDatePicker.date > date {
+            let calDate = CalendarDate(titel: dateTitel.text!, place: datePlace.text!, date: dateDatePicker.date)
+            calendar.dates.append(calDate)
+            dismiss(animated: true, completion: nil)
+        }
     }
     @IBOutlet weak var datePlace: UITextField!
     @IBOutlet weak var dateTitel: UITextField!

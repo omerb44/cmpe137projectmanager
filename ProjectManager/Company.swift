@@ -58,6 +58,9 @@ class Company {
         for employee in anyEmployee {
             allEmployee.append(employee.toAnyObject())
         }
+        if allEmployee.isEmpty {
+            allEmployee.append("null" as Any)
+        }
         return allEmployee
     }
     
@@ -65,6 +68,9 @@ class Company {
         var allProjects = [Any]()
         for project in projects {
             allProjects.append(project.toAnyObject())
+        }
+        if allProjects.isEmpty {
+            allProjects.append("null" as Any)
         }
         return allProjects
     }

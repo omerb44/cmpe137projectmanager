@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0C48A71DF2397E0079D5AD /* AllProjectsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C48A61DF2397E0079D5AD /* AllProjectsArray.swift */; };
 		3B0EDC921DDFD086000B9BBC /* ProjectsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */; };
 		3B0EDC941DE05353000B9BBC /* ProjectDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC931DE05353000B9BBC /* ProjectDetailVC.swift */; };
 		3B0EDC961DE058BB000B9BBC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC951DE058BB000B9BBC /* Message.swift */; };
@@ -16,6 +17,10 @@
 		3B0EDC9E1DE07287000B9BBC /* RecentsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */; };
 		3B0EDCA01DE072A3000B9BBC /* MessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */; };
 		3B0EDCA21DE072B5000B9BBC /* RecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */; };
+		3B1249D81DF78628000AB2F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1249D51DF78628000AB2F4 /* LoginViewController.swift */; };
+		3B1249D91DF78628000AB2F4 /* CEORegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1249D61DF78628000AB2F4 /* CEORegisterViewController.swift */; };
+		3B1249DA1DF78628000AB2F4 /* PilotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1249D71DF78628000AB2F4 /* PilotViewController.swift */; };
+		3B1249DD1DF789DA000AB2F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1249DC1DF789DA000AB2F4 /* RegisterViewController.swift */; };
 		3B21CA1B1DCAC70E000976DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */; };
 		3B21CA201DCAC70E000976DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA1E1DCAC70E000976DF /* Main.storyboard */; };
 		3B21CA251DCAC70E000976DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B21CA231DCAC70E000976DF /* LaunchScreen.storyboard */; };
@@ -27,6 +32,12 @@
 		3B21CA421DCACDD0000976DF /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA411DCACDD0000976DF /* Project.swift */; };
 		3B21CA441DCACDE9000976DF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA431DCACDE9000976DF /* Task.swift */; };
 		3B21CA461DCACE05000976DF /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21CA451DCACE05000976DF /* Company.swift */; };
+		3B29E0491DF647D300E24CCB /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29E0481DF647D300E24CCB /* CalendarCell.swift */; };
+		3B29E04B1DF65BF600E24CCB /* DateInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29E04A1DF65BF600E24CCB /* DateInfos.swift */; };
+		3B29E0541DF6645900E24CCB /* ProjectDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29E0531DF6645900E24CCB /* ProjectDetailCell.swift */; };
+		3B29E0561DF6659000E24CCB /* AllTasksArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29E0551DF6659000E24CCB /* AllTasksArray.swift */; };
+		3B29E0591DF68B5B00E24CCB /* MessageArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29E0581DF68B5B00E24CCB /* MessageArray.swift */; };
+		3B29E05D1DF69BCF00E24CCB /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29E05C1DF69BCF00E24CCB /* HRToast+UIView.swift */; };
 		3B466C4C1DDB036E00C7C0CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B466C4B1DDB036E00C7C0CB /* Assets.xcassets */; };
 		3B63B1C91DD9440400842E72 /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B1C81DD9440400842E72 /* CalendarDate.swift */; };
 		3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B1CA1DD947EC00842E72 /* TabBarController.swift */; };
@@ -48,6 +59,7 @@
 		0F149F5D88B2B6CDB845B079 /* Pods-ProjectManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectManager/Pods-ProjectManager.debug.xcconfig"; sourceTree = "<group>"; };
 		1FA20C96768E3655DE55BA3A /* Pods-ProjectManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectManager/Pods-ProjectManager.release.xcconfig"; sourceTree = "<group>"; };
 		2D2331BBB964AB7CDCC14FFF /* Pods_ProjectManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0C48A61DF2397E0079D5AD /* AllProjectsArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllProjectsArray.swift; sourceTree = "<group>"; };
 		3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsCell.swift; sourceTree = "<group>"; };
 		3B0EDC931DE05353000B9BBC /* ProjectDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailVC.swift; sourceTree = "<group>"; };
 		3B0EDC951DE058BB000B9BBC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -57,6 +69,10 @@
 		3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsDetailVC.swift; sourceTree = "<group>"; };
 		3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesCell.swift; sourceTree = "<group>"; };
 		3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsCell.swift; sourceTree = "<group>"; };
+		3B1249D51DF78628000AB2F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B1249D61DF78628000AB2F4 /* CEORegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CEORegisterViewController.swift; sourceTree = "<group>"; };
+		3B1249D71DF78628000AB2F4 /* PilotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotViewController.swift; sourceTree = "<group>"; };
+		3B1249DC1DF789DA000AB2F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3B21CA171DCAC70E000976DF /* ProjectManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B21CA1A1DCAC70E000976DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B21CA1F1DCAC70E000976DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +86,12 @@
 		3B21CA411DCACDD0000976DF /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		3B21CA431DCACDE9000976DF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3B21CA451DCACE05000976DF /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		3B29E0481DF647D300E24CCB /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		3B29E04A1DF65BF600E24CCB /* DateInfos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateInfos.swift; sourceTree = "<group>"; };
+		3B29E0531DF6645900E24CCB /* ProjectDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailCell.swift; sourceTree = "<group>"; };
+		3B29E0551DF6659000E24CCB /* AllTasksArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTasksArray.swift; sourceTree = "<group>"; };
+		3B29E0581DF68B5B00E24CCB /* MessageArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageArray.swift; sourceTree = "<group>"; };
+		3B29E05C1DF69BCF00E24CCB /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
 		3B466C4B1DDB036E00C7C0CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B63B1C81DD9440400842E72 /* CalendarDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
 		3B63B1CA1DD947EC00842E72 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -99,6 +121,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1249DB1DF78633000AB2F4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3B1249D51DF78628000AB2F4 /* LoginViewController.swift */,
+				3B1249DC1DF789DA000AB2F4 /* RegisterViewController.swift */,
+				3B1249D61DF78628000AB2F4 /* CEORegisterViewController.swift */,
+				3B1249D71DF78628000AB2F4 /* PilotViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		3B21CA0E1DCAC70D000976DF = {
 			isa = PBXGroup;
 			children = (
@@ -136,12 +169,12 @@
 		3B21CA2C1DCACB1E000976DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3B21CA451DCACE05000976DF /* Company.swift */,
-				3B21CA411DCACDD0000976DF /* Project.swift */,
-				3B21CA431DCACDE9000976DF /* Task.swift */,
-				3B0EDC951DE058BB000B9BBC /* Message.swift */,
+				3B29E05C1DF69BCF00E24CCB /* HRToast+UIView.swift */,
+				3B29E0571DF68A1F00E24CCB /* Task */,
+				3B29E05A1DF68B7800E24CCB /* Message */,
+				3B29E0471DF6379500E24CCB /* Project */,
 				3B21CA381DCACD43000976DF /* Calendar */,
-				3B21CA371DCACD1E000976DF /* Employee */,
+				3B21CA371DCACD1E000976DF /* Company */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -150,23 +183,12 @@
 			isa = PBXGroup;
 			children = (
 				3B63B1CA1DD947EC00842E72 /* TabBarController.swift */,
-				3B0EDC931DE05353000B9BBC /* ProjectDetailVC.swift */,
-				3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */,
-				3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */,
-				3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */,
-				3BC4BCB81DDA943000402387 /* CalendarVC.swift */,
+				3B1249DB1DF78633000AB2F4 /* Login */,
+				3B29E04E1DF65E8400E24CCB /* Project */,
+				3B29E04F1DF65E8F00E24CCB /* Calendar */,
+				3B29E0501DF65EA800E24CCB /* Messages */,
 				3BC4BCBA1DDA958D00402387 /* SettingsVC.swift */,
-				3BEAA2811DE19413008BF850 /* MessagesAllVC.swift */,
-				3B0EDC9B1DE07272000B9BBC /* MessagesDetailVC.swift */,
-				3BC4BCBC1DDA95B100402387 /* MessagesVC.swift */,
-				3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */,
-				3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */,
-				3B0EDC991DE06DF1000B9BBC /* RecentsVC.swift */,
-				3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */,
-				3BEAA27B1DE1929A008BF850 /* NewDateVC.swift */,
-				3BEAA27D1DE192EC008BF850 /* NewMessageVC.swift */,
-				3BEAA27F1DE19325008BF850 /* NewProjectVC.swift */,
-				3BBC4C891DE29BF900D5460B /* NewProjectCell.swift */,
+				3B29E05B1DF6998D00E24CCB /* Recents */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -180,15 +202,16 @@
 			name = StoryBoard;
 			sourceTree = "<group>";
 		};
-		3B21CA371DCACD1E000976DF /* Employee */ = {
+		3B21CA371DCACD1E000976DF /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				3B21CA451DCACE05000976DF /* Company.swift */,
 				3B21CA2F1DCACC67000976DF /* Employee.swift */,
 				3B21CA311DCACC89000976DF /* TopLevelEmployee.swift */,
 				3B21CA331DCACCCB000976DF /* MiddleLevelEmployee.swift */,
 				3B21CA351DCACCE4000976DF /* LowLevelEmployee.swift */,
 			);
-			name = Employee;
+			name = Company;
 			sourceTree = "<group>";
 		};
 		3B21CA381DCACD43000976DF /* Calendar */ = {
@@ -196,8 +219,82 @@
 			children = (
 				3B63B1C81DD9440400842E72 /* CalendarDate.swift */,
 				3B21CA391DCACD52000976DF /* Calendar.swift */,
+				3B29E04A1DF65BF600E24CCB /* DateInfos.swift */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		3B29E0471DF6379500E24CCB /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				3B0C48A61DF2397E0079D5AD /* AllProjectsArray.swift */,
+				3B21CA411DCACDD0000976DF /* Project.swift */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		3B29E04E1DF65E8400E24CCB /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				3BBC4C891DE29BF900D5460B /* NewProjectCell.swift */,
+				3BEAA27F1DE19325008BF850 /* NewProjectVC.swift */,
+				3B0EDC931DE05353000B9BBC /* ProjectDetailVC.swift */,
+				3B29E0531DF6645900E24CCB /* ProjectDetailCell.swift */,
+				3BC4BCB61DDA92F100402387 /* ProjectsTasksVC.swift */,
+				3B0EDC911DDFD085000B9BBC /* ProjectsCell.swift */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		3B29E04F1DF65E8F00E24CCB /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				3B29E0481DF647D300E24CCB /* CalendarCell.swift */,
+				3BBC4C8B1DE2E31500D5460B /* CalendarDetailVC.swift */,
+				3BEAA27B1DE1929A008BF850 /* NewDateVC.swift */,
+				3BC4BCB81DDA943000402387 /* CalendarVC.swift */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		3B29E0501DF65EA800E24CCB /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA2811DE19413008BF850 /* MessagesAllVC.swift */,
+				3B0EDC9B1DE07272000B9BBC /* MessagesDetailVC.swift */,
+				3BC4BCBC1DDA95B100402387 /* MessagesVC.swift */,
+				3B0EDC9F1DE072A3000B9BBC /* MessagesCell.swift */,
+				3BEAA27D1DE192EC008BF850 /* NewMessageVC.swift */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		3B29E0571DF68A1F00E24CCB /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				3B21CA431DCACDE9000976DF /* Task.swift */,
+				3B29E0551DF6659000E24CCB /* AllTasksArray.swift */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		3B29E05A1DF68B7800E24CCB /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				3B29E0581DF68B5B00E24CCB /* MessageArray.swift */,
+				3B0EDC951DE058BB000B9BBC /* Message.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		3B29E05B1DF6998D00E24CCB /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				3B0EDC9D1DE07287000B9BBC /* RecentsDetailVC.swift */,
+				3B0EDC991DE06DF1000B9BBC /* RecentsVC.swift */,
+				3B0EDCA11DE072B5000B9BBC /* RecentsCell.swift */,
+			);
+			name = Recents;
 			sourceTree = "<group>";
 		};
 		9744CA03A32C37AF879A2976 /* Pods */ = {
@@ -346,14 +443,21 @@
 				3B0EDC921DDFD086000B9BBC /* ProjectsCell.swift in Sources */,
 				3BC4BCBD1DDA95B100402387 /* MessagesVC.swift in Sources */,
 				3BC4BCBB1DDA958D00402387 /* SettingsVC.swift in Sources */,
+				3B1249DA1DF78628000AB2F4 /* PilotViewController.swift in Sources */,
 				3BBC4C8C1DE2E31500D5460B /* CalendarDetailVC.swift in Sources */,
+				3B1249D81DF78628000AB2F4 /* LoginViewController.swift in Sources */,
 				3BEAA2821DE19413008BF850 /* MessagesAllVC.swift in Sources */,
 				3BEAA27C1DE1929A008BF850 /* NewDateVC.swift in Sources */,
 				3B0EDCA01DE072A3000B9BBC /* MessagesCell.swift in Sources */,
+				3B29E0491DF647D300E24CCB /* CalendarCell.swift in Sources */,
 				3BEAA2801DE19325008BF850 /* NewProjectVC.swift in Sources */,
 				3B0EDC9A1DE06DF1000B9BBC /* RecentsVC.swift in Sources */,
 				3B0EDC9C1DE07272000B9BBC /* MessagesDetailVC.swift in Sources */,
+				3B1249D91DF78628000AB2F4 /* CEORegisterViewController.swift in Sources */,
 				3B0EDC9E1DE07287000B9BBC /* RecentsDetailVC.swift in Sources */,
+				3B1249DD1DF789DA000AB2F4 /* RegisterViewController.swift in Sources */,
+				3B29E05D1DF69BCF00E24CCB /* HRToast+UIView.swift in Sources */,
+				3B29E0561DF6659000E24CCB /* AllTasksArray.swift in Sources */,
 				3B21CA321DCACC89000976DF /* TopLevelEmployee.swift in Sources */,
 				3B21CA341DCACCCB000976DF /* MiddleLevelEmployee.swift in Sources */,
 				3B0EDC961DE058BB000B9BBC /* Message.swift in Sources */,
@@ -371,8 +475,12 @@
 				3BEAA27E1DE192EC008BF850 /* NewMessageVC.swift in Sources */,
 				3B63B1CB1DD947EC00842E72 /* TabBarController.swift in Sources */,
 				3B21CA461DCACE05000976DF /* Company.swift in Sources */,
+				3B29E04B1DF65BF600E24CCB /* DateInfos.swift in Sources */,
+				3B29E0541DF6645900E24CCB /* ProjectDetailCell.swift in Sources */,
 				3BC4BCB91DDA943000402387 /* CalendarVC.swift in Sources */,
+				3B29E0591DF68B5B00E24CCB /* MessageArray.swift in Sources */,
 				3B0EDC941DE05353000B9BBC /* ProjectDetailVC.swift in Sources */,
+				3B0C48A71DF2397E0079D5AD /* AllProjectsArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

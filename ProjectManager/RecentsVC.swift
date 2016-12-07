@@ -10,6 +10,8 @@ import UIKit
 
 class RecentsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var recentsTableView: UITableView!
+    
+    var allProjects = AllProjectsArray()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,19 +28,31 @@ class RecentsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //self.tabBarController?.title = "Recent Projects"
+        self.recentsTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return allProjects.allProjects.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    private let formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        return formatter
+    }()
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
-        cell = recentsTableView.dequeueReusableCell(withIdentifier: "testCell")!
+        cell = recentsTableView.dequeueReusableCell(withIdentifier: "testCell")! as! RecentsCell
+        let z = cell as! RecentsCell
+        z.projectManagerLabel.text = allProjects.allProjects[indexPath.row].projectManager.fullName
+        z.titleLabel.text = allProjects.allProjects[indexPath.row].projectName
+        z.dateLabel.text = self.formatter.string(from: allProjects.allProjects[indexPath.row].deadLine)
+        cell = z
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero

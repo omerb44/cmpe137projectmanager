@@ -23,6 +23,13 @@ extension String {
     }
 }
 
+extension Int {
+    static func random() -> Int {
+        var random = Int(arc4random_uniform(899) + 100)
+        return random
+    }
+}
+
 extension UITextField {
     
     func useUnderline() {
@@ -44,5 +51,20 @@ extension UIViewController {
     
     func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension UIView {
+    func addBackground() {
+        // screen width and height:
+        
+        let imageViewBackground = UIImageView(frame: UIScreen.main.bounds)
+        imageViewBackground.image = UIImage(named: "background")
+        
+        // you can change the content mode:
+        imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
+        
+        self.addSubview(imageViewBackground)
+        self.sendSubview(toBack: imageViewBackground)
     }
 }

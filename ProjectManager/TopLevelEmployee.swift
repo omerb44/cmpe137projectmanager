@@ -14,6 +14,10 @@ class TopLevelEmployee: Employee {
     var firstName           : String
     var lastName            : String
     var fullName            : String
+    var type                : String
+    var company             : String
+    var userName            : String
+    var password            : String
     var email               : String
     var sentMessages        = [Message]()
     var receivedMessages    = [Message]()
@@ -29,13 +33,28 @@ class TopLevelEmployee: Employee {
         return lhs.id == rhs.id
     }
     
-    init(firstName: String, lastName: String, email: String) {
-        self.id         = 0
-        self.id         = employeeID.id + 1
-        employeeID.id  += 1
+    init(firstName: String, lastName: String, email: String, userName: String, password: String, company: String) {
+        self.id         = Int.random()
         self.firstName  = firstName
+        self.type       = "TopLevelEmployee"
+        self.company    = company
         self.lastName   = lastName
+        self.userName   = userName
+        self.password   = password
         self.email      = email
+        self.fullName   = firstName + " " + lastName
+        self.calendar   = Calendar()
+    }
+    
+    init() {
+        self.id         = 0
+        self.firstName  = ""
+        self.type       = "TopLevelEmployee"
+        self.company    = ""
+        self.lastName   = ""
+        self.userName   = ""
+        self.password   = ""
+        self.email      = ""
         self.fullName   = firstName + " " + lastName
         self.calendar   = Calendar()
     }
@@ -51,9 +70,13 @@ class TopLevelEmployee: Employee {
     func toAnyObject() -> Any {
         return [
             "id"            : self.id,
+            "company"       : self.company,
+            "type"          : self.type,
             "firstName"     : self.firstName,
             "lastName"      : self.lastName,
             "fullName"      : self.fullName,
+            "userName"      : self.userName,
+            "password"      : self.password,
             "email"         : self.email,
             "sentMail"      : toAnyObjectArray(messageArray: self.sentMessages),
             "receivedMail"  : toAnyObjectArray(messageArray: self.receivedMessages),

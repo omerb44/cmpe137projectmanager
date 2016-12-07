@@ -13,7 +13,11 @@ protocol Employee {
     var firstName           : String { get }
     var lastName            : String { get }
     var fullName            : String { get }
+    var type                : String { get }
+    var company             : String { get }
     var email               : String { get }
+    var userName            : String { get }
+    var password            : String { get }
     var id                  : Int    { get }
     var sentMessages        : [Message] { get }
     var receivedMessages    : [Message] { get }
@@ -24,8 +28,4 @@ protocol Employee {
     func sendMessage(toID: Int, subject: String, message: String, date: Date)
     func toAnyObject() -> Any
     
-}
-
-struct employeeID {
-    static var id = 0
 }

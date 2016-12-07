@@ -10,6 +10,11 @@ import UIKit
 
 class MessagesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var messagesTableView: UITableView!
+    
+    var sentMessages = MessageArray()
+    var receivedMessages = MessageArray()
+    var archivedMessages = MessageArray()
+    var deletedMessages = MessageArray()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,19 +73,45 @@ class MessagesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            let destination = segue.destination as! MessagesAllVC
+            
             switch identifier {
             case "showInbox":
+                let destination = segue.destination as! MessagesAllVC
+                destination.sentMessages = sentMessages
+                destination.receivedMessages = receivedMessages
+                destination.archivedMessages = archivedMessages
+                destination.deletedMessages = deletedMessages
                 destination.title = "Inbox"
                 break
             case "showSent":
+                let destination = segue.destination as! MessagesAllVC
+                destination.sentMessages = sentMessages
+                destination.receivedMessages = receivedMessages
+                destination.archivedMessages = archivedMessages
+                destination.deletedMessages = deletedMessages
                 destination.title = "Sent"
                 break
             case "showArchive":
+                let destination = segue.destination as! MessagesAllVC
+                destination.sentMessages = sentMessages
+                destination.receivedMessages = receivedMessages
+                destination.archivedMessages = archivedMessages
+                destination.deletedMessages = deletedMessages
                 destination.title = "Archive"
                 break
             case "showTrash":
+                let destination = segue.destination as! MessagesAllVC
+                destination.sentMessages = sentMessages
+                destination.receivedMessages = receivedMessages
+                destination.archivedMessages = archivedMessages
+                destination.deletedMessages = deletedMessages
                 destination.title = "Trash"
+                break
+            case "toNewMessage":
+                let navigation = segue.destination as! UINavigationController
+                var vc = NewMessageVC()
+                vc = navigation.viewControllers[0] as! NewMessageVC
+                vc.messageArray = sentMessages
                 break
             default: break
             }

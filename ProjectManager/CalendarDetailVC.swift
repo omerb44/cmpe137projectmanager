@@ -11,13 +11,16 @@ import UIKit
 class CalendarDetailVC: UIViewController {
 
     @IBOutlet weak var popupView: UIView!
-    @IBOutlet weak var dateTitelLabel: UILabel!
-    @IBOutlet weak var datePlaceLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateTitelLabel: UILabel?
+    @IBOutlet weak var datePlaceLabel: UILabel?
+    @IBOutlet weak var dateLabel: UILabel?
     @IBOutlet weak var okayButton: UIButton!
     @IBAction func okButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    var dateInfo = DateInfos()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +31,10 @@ class CalendarDetailVC: UIViewController {
         okayButton.layer.borderColor = UIColor(red: 230/255, green: 126/255, blue: 34/255, alpha: 0.6).cgColor
         okayButton.layer.borderWidth = 1
         okayButton.layer.cornerRadius = 5
+        
+        dateTitelLabel?.text = dateInfo.array[0]
+        datePlaceLabel?.text = dateInfo.array[1]
+        dateLabel?.text = dateInfo.array[2]
         
     }
 
