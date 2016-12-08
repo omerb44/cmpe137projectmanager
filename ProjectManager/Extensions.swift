@@ -25,8 +25,7 @@ extension String {
 
 extension Int {
     static func random() -> Int {
-        var random = Int(arc4random_uniform(899) + 100)
-        return random
+        return Int(arc4random_uniform(899) + 100)
     }
 }
 

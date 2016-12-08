@@ -272,8 +272,6 @@ class ProjectsTasksVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                     let deadline = values.childSnapshot(forPath: "deadLine").value as! String
                     let projectName = values.childSnapshot(forPath: "projectName").value as! String
                     let projectManager = values.childSnapshot(forPath: "projectManager").childSnapshot(forPath: "id").value as! Int
-                    print(projectManager)
-                    let dated = dateFormatter.date(from: deadline)
                     completion1(deadline, projectName, projectManager)
                 }
             }

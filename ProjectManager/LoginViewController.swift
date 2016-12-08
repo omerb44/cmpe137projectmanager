@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
             print(snapshot.childrenCount)
             for values in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 if values.key == self.userName.text {
-                    if values.childSnapshot(forPath: "password").value as! String == self.passWord.text {
+                    if (values.childSnapshot(forPath: "password").value as! String) == self.passWord.text {
                         self.company = values.childSnapshot(forPath: "company").value as! String
                         self.type = values.childSnapshot(forPath: "type").value as! String
                         self.id = values.childSnapshot(forPath: "id").value as! Int
@@ -83,7 +83,6 @@ class LoginViewController: UIViewController {
                 vc1.uID = id
                 vc1.companyName = company
                 vc1.type = type
-                print(destination.viewControllers?.count)
                 var nc2 = UINavigationController()
                 nc2 = destination.viewControllers?[1] as! UINavigationController
                 let vc2 = nc2.viewControllers[0] as! CalendarVC

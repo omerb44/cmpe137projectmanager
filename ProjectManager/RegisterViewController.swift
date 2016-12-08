@@ -92,7 +92,7 @@ class EmployeeRegister2ViewController: UIViewController {
         submit.isEnabled = false
         errorLabel.textColor = UIColor.red
         code.autocorrectionType = .no
-        code.keyboardType = .numberPad
+        //code.keyboardType = .numberPad
     
         eMail.autocorrectionType = .no
         eMail.keyboardType = .emailAddress

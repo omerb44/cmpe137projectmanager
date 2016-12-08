@@ -34,6 +34,9 @@ class CEORegisterViewController: UIViewController {
         
         passWord.autocorrectionType = .no
         passWord.isSecureTextEntry = true
+        
+        numberOfEmployees.autocorrectionType = .no
+
         self.hideKeyboardWhenTappedAround()
 
     }
