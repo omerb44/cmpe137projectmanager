@@ -14,6 +14,7 @@ class EmployeeRegister2ViewController: UIViewController {
     var companyName = ""
     var uID = 0
     var type = ""
+    var newUser = LowLevelEmployee()
     
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -47,21 +48,20 @@ class EmployeeRegister2ViewController: UIViewController {
                 for value in snapshot.children.allObjects as! [FIRDataSnapshot] {
                     if let valueN = value.value as? String {
                         if value.value as! String == key {
-                            let newUser = LowLevelEmployee(firstName: firstname, lastName: lastname, email: email, userName: username, password: password, company: companyy)
-                            self.uID = newUser.id
-                            self.type = newUser.type
+                            self.newUser = LowLevelEmployee(firstName: firstname, lastName: lastname, email: email, userName: username, password: password, company: companyy)
+                            self.uID = self.newUser.id
+                            self.type = self.newUser.type
                             let newUserRef = ref2.child("accessCodes").child(value.key)
-                            newUserRef.setValue(newUser.toAnyObject())
-                            let lowLevelRef = ref2.child("lowLevelEmployees").child(newUser.lastName)
-                            lowLevelRef.setValue(newUser.toAnyObject())
+                            newUserRef.setValue(self.newUser.toAnyObject())
+                            let lowLevelRef = ref2.child("lowLevelEmployees").child(self.newUser.lastName)
+                            lowLevelRef.setValue(self.newUser.toAnyObject())
                             self.performSegue(withIdentifier: "toStartScreen", sender: self)
+                            let ref3 = FIRDatabase.database().reference(withPath: "Employees")
+                            ref3.child(username).setValue(self.newUser.toAnyObject())
                         }
                     }
                 }
             })
-            let newUser = LowLevelEmployee(firstName: firstname, lastName: lastname, email: email, userName: username, password: password, company: companyy)
-            let ref3 = FIRDatabase.database().reference(withPath: "Employees")
-            ref3.child(username).setValue(newUser.toAnyObject())
         } else {
             UIView.hr_setToastThemeColor(color: UIColor(red: 230/255, green: 126/255, blue: 34/255, alpha: 0.6))
             self.view.makeToast(message: "Please fill out all fields!", duration: 0.8, position: HRToastPositionCenter as AnyObject)
@@ -116,12 +116,30 @@ class EmployeeRegister2ViewController: UIViewController {
         if let identifier = segue.identifier {
             if identifier == "toStartScreen" {
                 let destination = segue.destination as! UITabBarController
-                var nc = UINavigationController()
-                nc = destination.viewControllers?[0] as! UINavigationController
-                let vc = nc.viewControllers[0] as! ProjectsTasksVC
-                vc.uID = uID
-                vc.companyName = companyName
-                vc.type = type
+                var nc1 = UINavigationController()
+                nc1 = destination.viewControllers?[0] as! UINavigationController
+                let vc1 = nc1.viewControllers[0] as! ProjectsTasksVC
+                vc1.uID = uID
+                vc1.companyName = companyName
+                vc1.type = type
+                var nc2 = UINavigationController()
+                nc2 = destination.viewControllers?[1] as! UINavigationController
+                let vc2 = nc2.viewControllers[0] as! CalendarVC
+                vc2.uID = uID
+                vc2.companyName = companyName
+                vc2.type = type
+                var nc3 = UINavigationController()
+                nc3 = destination.viewControllers?[2] as! UINavigationController
+                let vc3 = nc3.viewControllers[0] as! MessagesVC
+                vc3.uID = uID
+                vc3.companyName = companyName
+                vc3.type = type
+                var nc4 = UINavigationController()
+                nc4 = destination.viewControllers?[3] as! UINavigationController
+                let vc4 = nc4.viewControllers[0] as! RecentsVC
+                vc4.uID = uID
+                vc4.companyName = companyName
+                vc4.type = type
             }
         }
     }

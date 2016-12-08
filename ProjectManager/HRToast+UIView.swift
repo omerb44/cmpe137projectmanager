@@ -165,7 +165,6 @@ extension UIView {
                 timer.invalidate()
             }
             hideToast(toast: existToast!, force: false);
-            print("hide exist!")
         }
         
         toast.center = centerPointForPosition(position, toast: toast)

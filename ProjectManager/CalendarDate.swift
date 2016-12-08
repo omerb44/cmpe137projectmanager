@@ -23,7 +23,7 @@ class CalendarDate {
         return [
             "titel" : self.titel,
             "place" : self.place,
-            "date"  : self.date
+            "date"  : self.date.description
         ]
     }
     

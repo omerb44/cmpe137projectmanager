@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class NewProjectVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
+    
+    var companyName = ""
+    var id = 0
+    var employee = MiddleLevelEmployee()
     
     @IBOutlet weak var tasksTableView: UITableView!
     @IBOutlet weak var deadLineDatePicker: UIDatePicker!
@@ -36,9 +41,15 @@ class NewProjectVC: UIViewController, UITableViewDataSource, UITableViewDelegate
                 let task = Task(description: taskDecription, workingEmployee: LowLevelEmployee(firstName: "Oemer", lastName: "Baydar", email: "oemerb44@gmail.com", userName: "", password: "", company: ""), deadLine: deadLineDatePicker.date)
                 tasks.append(task)
             }
-            let project = Project(projectName: projectNameTextField.text!, projectManager: MiddleLevelEmployee(firstName: "Oemer", lastName: "Baydar", email: "oemerb44@gmail.com", userName: "", password: "", company: ""), startDate: date, deadLine: deadLineDatePicker.date, tasks: tasks)
-            allProjects.allProjects.append(project)
-            dismiss(animated: true, completion: nil)
+            getEmployee(id: id) { empl in
+                self.employee = empl
+                self.employee.id = empl.id
+                print("NAME: " + self.employee.fullName)
+                let project = Project(projectName: self.projectNameTextField.text!, projectManager: self.employee, startDate: date, deadLine: self.deadLineDatePicker.date, tasks: tasks)
+                self.allProjects.allProjects.append(project)
+                self.dismiss(animated: true, completion: nil)
+            }
+            
         }
     }
     
@@ -92,6 +103,29 @@ class NewProjectVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             textView.text = "Projectdescription"
             textView.textColor = UIColor.lightGray
         }
+    }
+    
+    func getEmployee(id: Int, completion: @escaping (_ empl: MiddleLevelEmployee) -> Void ) {
+        let ref2 = FIRDatabase.database().reference(withPath: companyName)
+        let ref3 = ref2.child("middleLevelEmployees")
+        var empl = MiddleLevelEmployee()
+        ref3.observeSingleEvent(of: .value, with: { snapshot in
+            for values in snapshot.children.allObjects as! [FIRDataSnapshot] {
+                print(values.childSnapshot(forPath: "id").value as! Int)
+                if id == values.childSnapshot(forPath: "id").value as! Int {
+                    let firstname = values.childSnapshot(forPath: "firstName").value as! String
+                    let lastname = values.childSnapshot(forPath: "lastName").value as! String
+                    let email = values.childSnapshot(forPath: "email").value as! String
+                    let username = values.childSnapshot(forPath: "userName").value as! String
+                    let password = values.childSnapshot(forPath: "password").value as! String
+                    let company = self.companyName
+                    empl = MiddleLevelEmployee(firstName: firstname, lastName: lastname, email: email, userName: username, password: password, company: company)
+                    print("NASDFMME:" + empl.fullName)
+                    empl.id = id
+                    completion(empl)
+                }
+            }
+        })
     }
 
 }

@@ -64,6 +64,10 @@ class TopLevelEmployee: Employee {
         for message in messageArray {
             anyMessage.append(message.toAnyObject())
         }
+        if anyMessage.isEmpty {
+            anyMessage.append("null" as Any)
+        }
+
         return anyMessage
     }
     

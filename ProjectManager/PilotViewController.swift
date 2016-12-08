@@ -15,28 +15,31 @@ class PilotViewController: UIViewController {
     @IBOutlet var ownABusiness: UIButton!
     @IBOutlet var workForABusiness: UIButton!
     
-    @IBAction func dismiss(_ sender: Any) {
+    /*@IBAction func dismiss(_ sender: Any) {
         getStartedView.isHidden = true;
         loginView.isHidden = false;
-    }
+    } */
     
-    @IBOutlet var start: UIButton!
+    //@IBOutlet var start: UIButton!
     
     @IBOutlet weak var getStartedView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getStartedView.isHidden = true;
-        self.view.addBackground()
-        start.layer.cornerRadius = 5
-        start.layer.borderWidth = 1
-        start.layer.borderColor = UIColor.white.cgColor
+        //getStartedView.isHidden = true;
+        //self.view.addBackground()
+      //  start.layer.cornerRadius = 5
+      //  start.layer.borderWidth = 1
+      //  start.layer.borderColor = UIColor.orange.cgColor
         ownABusiness.layer.cornerRadius = 5
         ownABusiness.layer.borderWidth = 1
-        ownABusiness.layer.borderColor = UIColor.white.cgColor
+        ownABusiness.layer.borderColor = UIColor.orange.cgColor
         workForABusiness.layer.cornerRadius = 5
         workForABusiness.layer.borderWidth = 1
-        workForABusiness.layer.borderColor = UIColor.white.cgColor
+        workForABusiness.layer.borderColor = UIColor.orange.cgColor
+        haveAnAccount.layer.cornerRadius = 5
+        haveAnAccount.layer.borderWidth = 1
+        haveAnAccount.layer.borderColor = UIColor.orange.cgColor
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -45,13 +48,13 @@ class PilotViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+ /*
     @IBAction func getStarted(_ sender: UIButton) {
         loginView.isHidden = true;
         getStartedView.isHidden = false;
         
     }
-    
+    */
     
     @IBOutlet var haveAnAccount: UIButton!
     

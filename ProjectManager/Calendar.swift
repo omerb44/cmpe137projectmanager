@@ -16,6 +16,9 @@ class Calendar {
         for date in dates {
             allCalendar.append(date.toAnyObject())
         }
+        if allCalendar.isEmpty {
+            allCalendar.append("null" as Any)
+        }
         return allCalendar
     }
     
